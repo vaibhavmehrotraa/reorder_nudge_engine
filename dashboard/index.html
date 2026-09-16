@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reorder Nudge Readout</title>
+<meta name="description" content="Experiment analysis and dashboard for the Swiggy reorder nudge project.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%9B%B5</text></svg>">
+<style>html{color-scheme:light dark;} body{margin:0;}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf6f0;
+    --bg-raised: #fffdf9;
+    --bg-sunken: #f2ebe0;
+    --ink: #211a15;
+    --ink-2: #5b5148;
+    --ink-3: #8a8078;
+    --border: #e7dfd3;
+    --border-strong: #d8cdbc;
+
+    --coral: #d64b32;
+    --coral-soft: #f1c9bd;
+    --blue: #2a6db0;
+    --blue-soft: #c7d9ec;
+    --amber: #b8790a;
+    --amber-soft: #eeddb8;
+
+    --status-good: #3f7d4e;
+    --status-good-bg: #e3efe4;
+    --status-caution: #a86a12;
+    --status-caution-bg: #f5e6cb;
+    --status-critical: #a83226;
+    --status-critical-bg: #f3ddd8;
+
+    --shadow: 0 1px 2px rgba(33, 26, 21, 0.06), 0 8px 24px -12px rgba(33, 26, 21, 0.18);
+    --radius: 14px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17120f;
+      --bg-raised: #211a15;
+      --bg-sunken: #1c1611;
+      --ink: #f3ede4;
+      --ink-2: #c9bfb2;
+      --ink-3: #93897d;
+      --border: #3a322a;
+      --border-strong: #4a4038;
+
+      --coral: #d85b3b;
+      --coral-soft: #4a2c22;
+      --blue: #4c90cc;
+      --blue-soft: #223244;
+      --amber: #c99328;
+      --amber-soft: #453820;
+
+      --status-good: #5fa873;
+      --status-good-bg: #22321f;
+      --status-caution: #d3a03c;
+      --status-caution-bg: #3a2f18;
+      --status-critical: #d9695a;
+      --status-critical-bg: #3a221d;
+
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -16px rgba(0, 0, 0, 0.55);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #17120f;
+    --bg-raised: #211a15;
+    --bg-sunken: #1c1611;
+    --ink: #f3ede4;
+    --ink-2: #c9bfb2;
+    --ink-3: #93897d;
+    --border: #3a322a;
+    --border-strong: #4a4038;
+
+    --coral: #d85b3b;
+    --coral-soft: #4a2c22;
+    --blue: #4c90cc;
+    --blue-soft: #223244;
+    --amber: #c99328;
+    --amber-soft: #453820;
+
+    --status-good: #5fa873;
+    --status-good-bg: #22321f;
+    --status-caution: #d3a03c;
+    --status-caution-bg: #3a2f18;
+    --status-critical: #d9695a;
+    --status-critical-bg: #3a221d;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -16px rgba(0, 0, 0, 0.55);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    padding-inline: 20px;
+    padding-block: 32px 64px;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+
+  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; text-wrap: balance; margin: 0; }
+  .num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+  header.page { display: flex; flex-direction: column; gap: 14px; }
+  .eyebrow {
+    font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink-3); font-weight: 600;
+  }
+  header.page h1 { font-size: clamp(28px, 4vw, 38px); font-weight: 600; color: var(--ink); }
+  header.page p.lede { color: var(--ink-2); font-size: 15.5px; max-width: 62ch; line-height: 1.55; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--bg-sunken); border: 1px solid var(--border);
+    border-radius: 999px; padding: 5px 12px; font-size: 12.5px; color: var(--ink-2);
+  }
+  .chip b { color: var(--ink); font-weight: 600; }
+
+  section { display: flex; flex-direction: column; gap: 16px; }
+  section > h2 { font-size: 20px; font-weight: 600; }
+  section > .section-sub { color: var(--ink-2); font-size: 14px; margin-top: -8px; max-width: 68ch; line-height: 1.5; }
+
+  .card {
+    background: var(--bg-raised); border: 1px solid var(--border);
+    border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: 22px 24px;
+  }
+
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+  .kpi {
+    background: var(--bg-raised); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 6px; box-shadow: var(--shadow);
+  }
+  .kpi .label { font-size: 12.5px; color: var(--ink-3); font-weight: 600; letter-spacing: 0.01em; }
+  .kpi .value { font-size: 26px; font-weight: 600; font-family: "IBM Plex Mono", monospace; letter-spacing: -0.01em; }
+  .kpi .sub { font-size: 12.5px; color: var(--ink-2); }
+  .kpi .value.coral { color: var(--coral); }
+  .kpi .value.blue { color: var(--blue); }
+
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px; width: fit-content;
+    font-size: 12.5px; font-weight: 600; padding: 4px 10px; border-radius: 999px;
+  }
+  .pill.caution { background: var(--status-caution-bg); color: var(--status-caution); }
+  .pill.good { background: var(--status-good-bg); color: var(--status-good); }
+  .pill.critical { background: var(--status-critical-bg); color: var(--status-critical); }
+  .pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+  .grid-2 { display: grid; grid-template-columns: 1.1fr 1fr; gap: 16px; }
+  @media (max-width: 780px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+  .legend .item { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .swatch { width: 10px; height: 10px; border-radius: 3px; }
+
+  .callout {
+    border-left: 3px solid var(--amber); background: var(--amber-soft);
+    border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 13.5px; color: var(--ink-2); line-height: 1.55;
+  }
+  .callout b { color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--ink-3); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+  td.num, th.num { text-align: right; font-family: "IBM Plex Mono", monospace; }
+  tr:last-child td { border-bottom: none; }
+  .table-wrap { overflow-x: auto; }
+
+  .bar-row { display: flex; align-items: center; gap: 10px; padding: 5px 0; }
+  .bar-row .bar-label { width: 150px; flex-shrink: 0; font-size: 13px; color: var(--ink-2); }
+  .bar-track { flex: 1; background: var(--bg-sunken); border-radius: 5px; height: 22px; position: relative; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 5px; position: relative; transition: width 0.5s ease; }
+  .bar-value { width: 68px; flex-shrink: 0; text-align: right; font-size: 13px; font-family: "IBM Plex Mono", monospace; color: var(--ink); }
+
+  .tooltip {
+    position: fixed; pointer-events: none; background: var(--ink); color: var(--bg-raised);
+    font-size: 12px; padding: 6px 9px; border-radius: 7px; z-index: 50; opacity: 0;
+    transition: opacity 0.1s ease; white-space: nowrap; box-shadow: var(--shadow);
+  }
+  .tooltip.show { opacity: 1; }
+
+  footer { color: var(--ink-3); font-size: 12.5px; line-height: 1.7; border-top: 1px solid var(--border); padding-top: 20px; }
+  footer a { color: var(--ink-2); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+  <header class="page">
+    <span class="eyebrow">Reorder Nudge Engine &middot; Experiment Readout</span>
+    <h1>Does a reorder nudge actually cause more orders?</h1>
+    <p class="lede">A holdout-controlled readout of the rule-based reorder nudge from the PRD, run on synthetic
+      order history calibrated to public food-delivery and recurring-purchase datasets. Every number below comes
+      from the simulated trigger engine's own event log, not from the ground-truth parameters used to generate
+      the data &mdash; the same constraint a real analyst would work under.</p>
+    <div class="chips" id="provenance-chips"></div>
+  </header>
+
+  <section>
+    <h2>Headline numbers</h2>
+    <div class="kpi-grid" id="kpi-grid"></div>
+  </section>
+
+  <section>
+    <div class="grid-2">
+      <div class="card">
+        <h2 style="font-size:17px;">Is the effect real?</h2>
+        <p class="section-sub" style="margin-top:2px;">Incremental orders per user, treatment minus holdout, with a
+          bootstrap 95% confidence interval. A holdout group is what separates &ldquo;the nudge caused this order&rdquo;
+          from &ldquo;this user was ordering anyway.&rdquo;</p>
+        <svg id="lift-chart" width="100%" viewBox="0 0 460 150" style="margin-top:8px;"></svg>
+        <div class="callout" id="lift-callout" style="margin-top:6px;"></div>
+      </div>
+
+      <div class="card">
+        <h2 style="font-size:17px;">The nudge funnel</h2>
+        <p class="section-sub" style="margin-top:2px;">From a trigger firing to an incremental order, treatment
+          group only.</p>
+        <div id="funnel-chart" style="margin-top:10px;"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Which trigger earns its keep</h2>
+    <p class="section-sub">Conversion at each stage of the funnel, by trigger type. Contextual (rainy-day comfort
+      food) nudges convert best per open &mdash; day-of-week and cadence nudges reach more people but convert less
+      often per send.</p>
+    <div class="card table-wrap">
+      <table id="trigger-table"></table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Who benefits, in relative terms</h2>
+    <p class="section-sub">Incremental lift by order-frequency segment, indexed to each segment's own holdout
+      baseline &mdash; raw order counts range from under 1/user (dormant) to 30+/user (power), so relative lift is
+      the fair comparison across them.</p>
+    <div class="card">
+      <svg id="cohort-chart" width="100%" viewBox="0 0 900 220"></svg>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where nudges got suppressed before sending</h2>
+    <p class="section-sub">A fired trigger doesn't always become a nudge &mdash; these are the guardrails and
+      eligibility checks from the PRD doing their job.</p>
+    <div class="card" id="suppression-chart"></div>
+  </section>
+
+  <footer>
+    <div id="footer-text"></div>
+  </footer>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const DATA = {"generated_at": "2026-09-16T18:57:47.703900", "simulation_window": {"start": "2026-03-20", "end": "2026-09-18"}, "funnel": {"overall": {"trigger_fired": 48460, "nudge_sent": 11400, "nudge_opened": 3290, "reorder_placed": 525}, "by_trigger_type": {"cadence": {"trigger_fired": 33491, "nudge_sent": 6307, "nudge_opened": 1378, "reorder_placed": 135}, "contextual": {"trigger_fired": 8214, "nudge_sent": 2412, "nudge_opened": 967, "reorder_placed": 237}, "day_of_week": {"trigger_fired": 6755, "nudge_sent": 2681, "nudge_opened": 945, "reorder_placed": 153}}, "suppression_reasons": {"frequency_cap": 5626, "already_ordered_today": 1790, "restaurant_inactive": 1138}}, "experiment": {"n_treatment": 794, "n_holdout": 825, "mean_orders_treatment": 11.203, "mean_orders_holdout": 10.268, "mean_incremental_orders_treatment": 0.661, "measured_lift": 0.935, "relative_lift_pct": 9.11, "t_stat": 1.95, "p_value": 0.05132676795733928, "significant_at_05": false, "cohens_d": 0.097, "bootstrap_ci_95": [0.022, 1.885], "cohort_breakdown": [{"frequency_segment": "dormant", "experiment_group": "holdout", "mean_total_orders": 0.848, "n_users": 46}, {"frequency_segment": "dormant", "experiment_group": "treatment", "mean_total_orders": 0.852, "n_users": 27}, {"frequency_segment": "occasional", "experiment_group": "holdout", "mean_total_orders": 2.959, "n_users": 317}, {"frequency_segment": "occasional", "experiment_group": "treatment", "mean_total_orders": 3.423, "n_users": 310}, {"frequency_segment": "power", "experiment_group": "holdout", "mean_total_orders": 28.202, "n_users": 129}, {"frequency_segment": "power", "experiment_group": "treatment", "mean_total_orders": 30.234, "n_users": 128}, {"frequency_segment": "regular", "experiment_group": "holdout", "mean_total_orders": 11.58, "n_users": 333}, {"frequency_segment": "regular", "experiment_group": "treatment", "mean_total_orders": 11.979, "n_users": 329}]}};
+
+const els = {
+  chips: document.getElementById("provenance-chips"),
+  kpis: document.getElementById("kpi-grid"),
+  liftChart: document.getElementById("lift-chart"),
+  liftCallout: document.getElementById("lift-callout"),
+  funnel: document.getElementById("funnel-chart"),
+  triggerTable: document.getElementById("trigger-table"),
+  cohortChart: document.getElementById("cohort-chart"),
+  suppression: document.getElementById("suppression-chart"),
+  footer: document.getElementById("footer-text"),
+  tooltip: document.getElementById("tooltip"),
+};
+
+function fmt(n, d = 1) { return Number(n).toLocaleString(undefined, { minimumFractionDigits: d, maximumFractionDigits: d }); }
+function pct(n, d = 1) { return `${n >= 0 ? "+" : ""}${fmt(n, d)}%`; }
+
+function showTip(evt, html) {
+  els.tooltip.innerHTML = html;
+  els.tooltip.style.left = evt.clientX + 14 + "px";
+  els.tooltip.style.top = evt.clientY + 14 + "px";
+  els.tooltip.classList.add("show");
+}
+function hideTip() { els.tooltip.classList.remove("show"); }
+
+// ---- provenance chips ----
+(function renderChips() {
+  const w = DATA.simulation_window;
+  els.chips.innerHTML = `
+    <span class="chip">Simulation window &nbsp;<b>${w.start} &rarr; ${w.end}</b></span>
+    <span class="chip">Eligible users &nbsp;<b>${(DATA.experiment.n_treatment + DATA.experiment.n_holdout).toLocaleString()}</b></span>
+    <span class="chip">Data &nbsp;<b>synthetic, Instacart/Zomato-calibrated</b></span>
+  `;
+})();
+
+// ---- KPI tiles ----
+(function renderKPIs() {
+  const e = DATA.experiment;
+  const sigPill = e.significant_at_05
+    ? `<span class="pill good">Significant at p&lt;0.05</span>`
+    : `<span class="pill caution">Not yet significant</span>`;
+
+  const tiles = [
+    { label: "Orders / user, treatment", value: fmt(e.mean_orders_treatment, 2), cls: "coral", sub: `n = ${e.n_treatment.toLocaleString()}` },
+    { label: "Orders / user, holdout", value: fmt(e.mean_orders_holdout, 2), cls: "blue", sub: `n = ${e.n_holdout.toLocaleString()}` },
+    { label: "Measured incremental lift", value: `+${fmt(e.measured_lift, 2)}`, cls: "", sub: pct(e.relative_lift_pct) + " relative" },
+    { label: "Significance", value: `p = ${fmt(e.p_value, 3)}`, cls: "", sub: sigPill, isPill: true },
+    { label: "Effect size (Cohen's d)", value: fmt(e.cohens_d, 2), cls: "", sub: "small, as expected for a low-friction nudge" },
+  ];
+
+  els.kpis.innerHTML = tiles.map(t => `
+    <div class="kpi">
+      <div class="label">${t.label}</div>
+      <div class="value ${t.cls}">${t.value}</div>
+      <div class="sub">${t.isPill ? t.sub : t.sub}</div>
+    </div>
+  `).join("");
+})();
+
+// ---- Lift chart: point + bootstrap CI whisker on a number line ----
+(function renderLiftChart() {
+  const e = DATA.experiment;
+  const [lo, hi] = e.bootstrap_ci_95;
+  const mid = e.measured_lift;
+  const pad = 60;
+  const w = 460, h = 150;
+  const domainMin = Math.min(0, lo) - 0.3;
+  const domainMax = Math.max(hi, mid) + 0.3;
+  const x = v => pad + ((v - domainMin) / (domainMax - domainMin)) * (w - pad - 30);
+  const y = h / 2;
+
+  const zeroX = x(0);
+  const loX = x(lo), hiX = x(hi), midX = x(mid);
+
+  els.liftChart.innerHTML = `
+    <line x1="${zeroX}" y1="20" x2="${zeroX}" y2="${h - 30}" stroke="var(--border-strong)" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="${zeroX}" y="${h - 12}" text-anchor="middle" fill="var(--ink-3)" font-size="11" font-family="IBM Plex Mono, monospace">0</text>
+
+    <line x1="${loX}" y1="${y}" x2="${hiX}" y2="${y}" stroke="var(--coral)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="${loX}" y1="${y - 8}" x2="${loX}" y2="${y + 8}" stroke="var(--coral)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="${hiX}" y1="${y - 8}" x2="${hiX}" y2="${y + 8}" stroke="var(--coral)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="${midX}" cy="${y}" r="7" fill="var(--coral)" stroke="var(--bg-raised)" stroke-width="2"/>
+
+    <text x="${midX}" y="${y - 20}" text-anchor="middle" fill="var(--ink)" font-size="13" font-weight="600" font-family="IBM Plex Mono, monospace">+${fmt(mid, 2)}</text>
+    <text x="${loX}" y="${y + 26}" text-anchor="middle" fill="var(--ink-3)" font-size="10.5" font-family="IBM Plex Mono, monospace">${fmt(lo, 2)}</text>
+    <text x="${hiX}" y="${y + 26}" text-anchor="middle" fill="var(--ink-3)" font-size="10.5" font-family="IBM Plex Mono, monospace">${fmt(hi, 2)}</text>
+    <text x="${w / 2}" y="20" text-anchor="middle" fill="var(--ink-3)" font-size="11">incremental orders per user (95% CI)</text>
+  `;
+
+  els.liftCallout.innerHTML = e.significant_at_05
+    ? `<b>Directionally positive and significant.</b> The 95% interval sits entirely above zero &mdash; the nudge is causing real incremental orders, not just relabeling ones that would have happened anyway.`
+    : `<b>Directionally positive, borderline on significance.</b> The t-test lands at p = ${fmt(e.p_value, 3)} (just above the conventional 0.05 cutoff) while the bootstrap interval [${fmt(lo, 2)}, ${fmt(hi, 2)}] barely clears zero &mdash; consistent readings of a real but small effect. At this sample size the honest call is "promising, not yet proven": worth a longer run or a larger holdout split before a full rollout decision, not a reason to kill it.`;
+})();
+
+// ---- Funnel (sequential coral ramp) ----
+(function renderFunnel() {
+  const f = DATA.funnel.overall;
+  const stages = [
+    { label: "Trigger fired", value: f.trigger_fired, color: "#f1c9bd" },
+    { label: "Nudge sent", value: f.nudge_sent, color: "#e08a6f" },
+    { label: "Nudge opened", value: f.nudge_opened, color: "#d6613f" },
+    { label: "Incremental order", value: f.reorder_placed, color: "var(--coral)" },
+  ];
+  const max = stages[0].value;
+
+  els.funnel.innerHTML = stages.map((s, i) => {
+    const pct_ = (s.value / max) * 100;
+    const convFromPrev = i === 0 ? null : ((s.value / stages[i - 1].value) * 100).toFixed(1);
+    return `
+      <div class="bar-row">
+        <div class="bar-label">${s.label}</div>
+        <div class="bar-track" data-tip="${s.value.toLocaleString()}${convFromPrev ? ` &middot; ${convFromPrev}% of prior stage` : ""}">
+          <div class="bar-fill" style="width:${pct_}%; background:${s.color};"></div>
+        </div>
+        <div class="bar-value">${s.value.toLocaleString()}</div>
+      </div>
+    `;
+  }).join("");
+
+  els.funnel.querySelectorAll(".bar-track").forEach(el => {
+    el.addEventListener("mousemove", e => showTip(e, el.dataset.tip));
+    el.addEventListener("mouseleave", hideTip);
+  });
+})();
+
+// ---- Trigger type conversion table ----
+(function renderTriggerTable() {
+  const rows = Object.entries(DATA.funnel.by_trigger_type).map(([type, s]) => {
+    const sentToOpen = s.nudge_sent ? (100 * s.nudge_opened / s.nudge_sent) : 0;
+    const openToPlaced = s.nudge_opened ? (100 * s.reorder_placed / s.nudge_opened) : 0;
+    const sentToPlaced = s.nudge_sent ? (100 * s.reorder_placed / s.nudge_sent) : 0;
+    const niceType = { day_of_week: "Day-of-week pattern", cadence: "Cadence deviation", contextual: "Contextual (rain)" }[type] || type;
+    return { niceType, ...s, sentToOpen, openToPlaced, sentToPlaced };
+  }).sort((a, b) => b.sentToPlaced - a.sentToPlaced);
+
+  els.triggerTable.innerHTML = `
+    <thead><tr>
+      <th>Trigger type</th><th class="num">Sent</th><th class="num">Opened</th><th class="num">Incremental orders</th>
+      <th class="num">Open rate</th><th class="num">Order rate (of opens)</th><th class="num">Order rate (of sends)</th>
+    </tr></thead>
+    <tbody>${rows.map(r => `
+      <tr>
+        <td>${r.niceType}</td>
+        <td class="num">${r.nudge_sent.toLocaleString()}</td>
+        <td class="num">${r.nudge_opened.toLocaleString()}</td>
+        <td class="num">${r.reorder_placed.toLocaleString()}</td>
+        <td class="num">${fmt(r.sentToOpen)}%</td>
+        <td class="num">${fmt(r.openToPlaced)}%</td>
+        <td class="num">${fmt(r.sentToPlaced)}%</td>
+      </tr>`).join("")}
+    </tbody>
+  `;
+})();
+
+// ---- Cohort relative-lift chart (diverging around zero) ----
+(function renderCohortChart() {
+  const rows = DATA.experiment.cohort_breakdown;
+  const bySeg = {};
+  rows.forEach(r => {
+    bySeg[r.frequency_segment] = bySeg[r.frequency_segment] || {};
+    bySeg[r.frequency_segment][r.experiment_group] = r.mean_total_orders;
+  });
+  const order = ["dormant", "occasional", "regular", "power"];
+  const segs = order.filter(s => bySeg[s]).map(seg => {
+    const t = bySeg[seg].treatment ?? 0, h = bySeg[seg].holdout ?? 0;
+    const lift = h > 0 ? ((t - h) / h) * 100 : 0;
+    return { seg, lift, t, h };
+  });
+
+  const w = 900, h = 220, padL = 90, padR = 30, padTop = 20, padBottom = 34;
+  const maxAbs = Math.max(...segs.map(s => Math.abs(s.lift)), 5) * 1.15;
+  const zeroX = padL + (w - padL - padR) / 2;
+  const scale = (w - padL - padR) / 2 / maxAbs;
+  const barH = (h - padTop - padBottom) / segs.length - 14;
+
+  const bars = segs.map((s, i) => {
+    const y = padTop + i * ((h - padTop - padBottom) / segs.length) + 7;
+    const barW = Math.abs(s.lift) * scale;
+    const barX = s.lift >= 0 ? zeroX : zeroX - barW;
+    const color = s.lift >= 0 ? "var(--coral)" : "var(--blue)";
+    const label = s.seg.charAt(0).toUpperCase() + s.seg.slice(1);
+    return `
+      <g class="cohort-bar" data-tip="${label}: ${fmt(s.t, 2)} vs ${fmt(s.h, 2)} orders/user (treatment vs holdout)">
+        <text x="${padL - 12}" y="${y + barH / 2 + 4}" text-anchor="end" fill="var(--ink-2)" font-size="13">${label}</text>
+        <rect x="${barX}" y="${y}" width="${Math.max(barW, 1)}" height="${barH}" rx="4" fill="${color}"/>
+        <text x="${s.lift >= 0 ? barX + barW + 8 : barX - 8}" y="${y + barH / 2 + 4}"
+              text-anchor="${s.lift >= 0 ? "start" : "end"}" fill="var(--ink)" font-size="12.5"
+              font-family="IBM Plex Mono, monospace" font-weight="600">${pct(s.lift)}</text>
+      </g>
+    `;
+  }).join("");
+
+  els.cohortChart.innerHTML = `
+    <line x1="${zeroX}" y1="${padTop - 4}" x2="${zeroX}" y2="${h - padBottom + 4}" stroke="var(--border-strong)" stroke-width="1.5"/>
+    <text x="${zeroX}" y="${h - padBottom + 20}" text-anchor="middle" fill="var(--ink-3)" font-size="11">0% (no lift)</text>
+    ${bars}
+  `;
+
+  els.cohortChart.querySelectorAll(".cohort-bar").forEach(el => {
+    el.addEventListener("mousemove", e => showTip(e, el.dataset.tip));
+    el.addEventListener("mouseleave", hideTip);
+  });
+})();
+
+// ---- Suppression reasons ----
+(function renderSuppression() {
+  const reasons = DATA.funnel.suppression_reasons;
+  const nice = { frequency_cap: "Weekly frequency cap", already_ordered_today: "Already ordered today", restaurant_inactive: "Restaurant inactive" };
+  const entries = Object.entries(reasons).sort((a, b) => b[1] - a[1]);
+  const max = Math.max(...entries.map(e => e[1]));
+
+  els.suppression.innerHTML = entries.map(([key, val]) => `
+    <div class="bar-row">
+      <div class="bar-label">${nice[key] || key}</div>
+      <div class="bar-track" data-tip="${val.toLocaleString()} fired triggers suppressed">
+        <div class="bar-fill" style="width:${(val / max) * 100}%; background: var(--amber);"></div>
+      </div>
+      <div class="bar-value">${val.toLocaleString()}</div>
+    </div>
+  `).join("");
+
+  els.suppression.querySelectorAll(".bar-track").forEach(el => {
+    el.addEventListener("mousemove", e => showTip(e, el.dataset.tip));
+    el.addEventListener("mouseleave", hideTip);
+  });
+})();
+
+// ---- Footer ----
+(function renderFooter() {
+  els.footer.innerHTML = `
+    Generated ${new Date(DATA.generated_at).toLocaleString()} from a fully synthetic order-history simulation
+    (see <span class="num">generate_synthetic_swiggy_data.py</span>, <span class="num">simulate_trigger_engine.py</span>
+    and <span class="num">analyze_experiment.py</span>). Order-cadence and repeat-purchase shape calibrated to the
+    publicly documented distribution of the
+    <a href="https://www.kaggle.com/datasets/lakshaymalhotra/instacart-market-basket-analysis" target="_blank" rel="noopener">Instacart Market Basket Analysis</a>
+    dataset; cuisine and order-value texture informed by public Zomato/Swiggy delivery-operations datasets on Kaggle.
+    No real Swiggy data was used or accessed.
+  `;
+})();
+</script>
+
+</body>
+</html>

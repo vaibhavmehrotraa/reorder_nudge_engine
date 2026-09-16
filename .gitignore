@@ -1,0 +1,13 @@
+# Full-size local run outputs (regenerate with the scripts; sample_data/ has trimmed previews instead)
+synthetic_data/
+synthetic_data_*/
+trigger_engine_output/
+trigger_engine_*/
+analysis_output_local/
+
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+venv/
+.venv/

@@ -1,0 +1,301 @@
+order_id,user_id,restaurant_id,cuisine,order_datetime,order_dow,order_hour,is_weekend,is_rainy,is_regular_restaurant_for_user,gap_days_since_prev_order,item_count,items,cart_value_inr,restaurant_was_active
+O0000000,U000000,R00047,South Indian,2026-04-03 20:00:00,4,20,True,False,True,6,3,Idli Sambar|Uttapam|Masala Dosa,335.76,True
+O0000001,U000000,R00087,South Indian,2026-04-11 21:00:00,5,21,True,False,False,8,1,Masala Dosa,163.68,True
+O0000002,U000000,R00047,South Indian,2026-05-01 21:00:00,4,21,True,False,False,20,2,Curd Rice|Masala Dosa,210.92,True
+O0000003,U000000,R00017,Biryani,2026-05-08 18:00:00,4,18,True,True,True,7,2,Mutton Biryani|Veg Biryani,331.16,True
+O0000004,U000000,R00108,Fast Food,2026-05-11 21:00:00,0,21,False,False,True,3,2,Loaded Fries|Burger Combo,264.58,True
+O0000005,U000000,R00007,South Indian,2026-05-12 17:00:00,1,17,False,False,True,1,1,Uttapam,105.42,True
+O0000006,U000000,R00047,South Indian,2026-05-13 21:00:00,2,21,False,False,True,1,2,Idli Sambar|Curd Rice,238.24,True
+O0000007,U000000,R00005,Desserts,2026-06-04 21:00:00,3,21,False,False,False,22,1,Cheesecake Slice,149.5,True
+O0000008,U000000,R00007,South Indian,2026-06-05 22:00:00,4,22,True,False,True,2,2,Uttapam|Masala Dosa,213.54,True
+O0000009,U000000,R00047,South Indian,2026-06-12 23:00:00,4,23,True,True,True,5,2,Idli Sambar|Masala Dosa,192.25,True
+O0000010,U000000,R00007,South Indian,2026-07-09 17:00:00,3,17,False,False,True,27,2,Curd Rice|Idli Sambar,183.19,True
+O0000011,U000000,R00047,South Indian,2026-07-16 18:00:00,3,18,False,True,True,7,3,Curd Rice|Uttapam|Idli Sambar,327.97,True
+O0000012,U000000,R00041,Rolls & Wraps,2026-07-23 17:00:00,3,17,False,False,False,7,3,Egg Roll|Paneer Roll|Chicken Roll,209.67,True
+O0000013,U000000,R00108,Fast Food,2026-08-10 18:00:00,0,18,False,False,False,18,2,Chicken Wrap|Burger Combo,199.53,True
+O0000014,U000000,R00108,Fast Food,2026-08-25 20:00:00,1,20,False,True,True,15,1,Cheese Sandwich,103.19,True
+O0000015,U000000,R00007,South Indian,2026-09-07 20:00:00,0,20,False,False,True,13,1,Uttapam,91.75,True
+O0000016,U000001,R00093,Biryani,2026-04-11 15:00:00,5,15,True,True,True,15,1,Chicken Biryani,167.39,False
+O0000017,U000001,R00024,North Indian,2026-04-18 22:00:00,5,22,True,False,True,7,2,Naan Combo|Dal Makhani,200.53,True
+O0000018,U000001,R00059,Chinese,2026-04-25 19:00:00,5,19,True,True,True,8,2,Manchurian|Fried Rice,171.08,False
+O0000019,U000001,R00024,North Indian,2026-04-28 23:00:00,1,23,False,False,True,3,2,Paneer Tikka|Naan Combo,159.79,True
+O0000020,U000001,R00100,North Indian,2026-05-16 16:00:00,5,16,True,False,True,20,2,Paneer Tikka|Naan Combo,218.2,True
+O0000021,U000001,R00091,Biryani,2026-05-22 19:00:00,4,19,True,False,False,6,1,Mutton Biryani,118.43,True
+O0000022,U000001,R00024,North Indian,2026-05-23 19:00:00,5,19,True,False,True,1,1,Naan Combo,106.0,True
+O0000023,U000001,R00024,North Indian,2026-05-30 16:00:00,5,16,True,False,True,9,3,Paneer Tikka|Dal Makhani|Naan Combo,208.61,True
+O0000024,U000001,R00091,Biryani,2026-06-21 20:00:00,6,20,True,False,False,22,3,Mutton Biryani|Veg Biryani|Chicken Biryani,500.89,True
+O0000025,U000001,R00006,Fast Food,2026-06-20 19:00:00,5,19,True,True,True,2,2,Loaded Fries|Burger Combo,275.73,True
+O0000026,U000001,R00098,Fast Food,2026-07-08 17:00:00,2,17,False,False,False,18,3,Chicken Wrap|Cheese Sandwich|Loaded Fries,294.89,True
+O0000027,U000001,R00059,Chinese,2026-07-11 23:00:00,5,23,True,True,True,6,3,Fried Rice|Chilli Chicken|Hakka Noodles,296.21,False
+O0000028,U000001,R00059,Chinese,2026-07-25 23:00:00,5,23,True,True,True,12,1,Fried Rice,71.67,False
+O0000029,U000001,R00059,Chinese,2026-08-01 19:00:00,5,19,True,False,True,7,1,Chilli Chicken,106.06,False
+O0000030,U000001,R00091,Biryani,2026-08-24 18:00:00,0,18,False,True,False,23,3,Chicken Biryani|Egg Biryani|Mutton Biryani,306.01,True
+O0000031,U000001,R00100,North Indian,2026-08-31 19:00:00,0,19,False,False,True,7,3,Naan Combo|Dal Makhani|Paneer Tikka,302.5,True
+O0000032,U000002,R00086,Rolls & Wraps,2026-04-02 16:00:00,3,16,False,False,True,7,1,Paneer Roll,168.34,True
+O0000033,U000002,R00086,Rolls & Wraps,2026-04-16 21:00:00,3,21,False,False,True,14,2,Chicken Roll|Egg Roll,272.89,True
+O0000034,U000002,R00074,Momos,2026-04-21 18:00:00,1,18,False,False,False,5,1,Steamed Momos,105.7,True
+O0000035,U000002,R00090,North Indian,2026-04-26 17:00:00,6,17,True,False,False,5,2,Naan Combo|Butter Chicken,339.66,True
+O0000036,U000002,R00062,Pizza,2026-05-21 18:00:00,3,18,False,False,True,28,2,Pepperoni Pizza|Margherita,152.52,True
+O0000037,U000002,R00062,Pizza,2026-06-21 16:00:00,6,16,True,True,True,31,2,Farmhouse Pizza|Pepperoni Pizza,175.66,True
+O0000038,U000002,R00086,Rolls & Wraps,2026-07-20 20:00:00,0,20,False,False,True,29,2,Egg Roll|Chicken Roll,333.79,True
+O0000039,U000002,R00062,Pizza,2026-07-23 20:00:00,3,20,False,True,True,6,2,Pepperoni Pizza|Margherita,169.55,True
+O0000040,U000002,R00062,Pizza,2026-07-30 16:00:00,3,16,False,False,True,6,3,Pepperoni Pizza|Margherita|Farmhouse Pizza,276.78,True
+O0000041,U000002,R00086,Rolls & Wraps,2026-08-06 19:00:00,3,19,False,False,True,7,2,Chicken Roll|Egg Roll,241.07,True
+O0000042,U000002,R00086,Rolls & Wraps,2026-08-12 18:00:00,2,18,False,True,True,6,3,Paneer Roll|Chicken Roll|Egg Roll,359.93,True
+O0000043,U000002,R00086,Rolls & Wraps,2026-09-10 18:00:00,3,18,False,False,True,29,1,Chicken Roll,137.58,True
+O0000044,U000003,R00102,Biryani,2026-03-27 20:00:00,4,20,True,False,True,1,1,Egg Biryani,87.09,True
+O0000045,U000003,R00124,Beverages,2026-04-04 16:00:00,5,16,True,False,False,8,1,Milkshake,95.76,True
+O0000046,U000003,R00109,Biryani,2026-04-10 20:00:00,4,20,True,False,True,4,3,Chicken Biryani|Mutton Biryani|Egg Biryani,435.01,True
+O0000047,U000003,R00064,Beverages,2026-04-14 20:00:00,1,20,False,False,False,4,2,Cold Coffee|Milkshake,245.2,True
+O0000048,U000003,R00102,Biryani,2026-05-05 19:00:00,1,19,False,False,True,21,1,Chicken Biryani,68.7,True
+O0000049,U000003,R00102,Biryani,2026-05-15 20:00:00,4,20,True,False,True,13,1,Chicken Biryani,67.31,True
+O0000050,U000003,R00034,Chinese,2026-06-05 19:00:00,4,19,True,False,False,21,2,Fried Rice|Manchurian,293.34,True
+O0000051,U000003,R00130,Desserts,2026-06-12 18:00:00,4,18,True,True,False,7,1,Ice Cream Tub,103.22,False
+O0000052,U000003,R00001,Fast Food,2026-06-19 21:00:00,4,21,True,False,False,7,2,Chicken Wrap|Loaded Fries,305.51,True
+O0000053,U000003,R00109,Biryani,2026-06-26 21:00:00,4,21,True,False,True,7,1,Veg Biryani,170.08,True
+O0000054,U000003,R00034,Chinese,2026-07-25 20:00:00,5,20,True,True,False,29,3,Manchurian|Chilli Chicken|Hakka Noodles,341.5,True
+O0000055,U000003,R00109,Biryani,2026-07-24 20:00:00,4,20,True,False,True,1,3,Egg Biryani|Chicken Biryani|Mutton Biryani,293.92,True
+O0000056,U000003,R00053,Rolls & Wraps,2026-08-05 23:00:00,2,23,False,False,True,12,2,Paneer Roll|Chicken Roll,224.34,True
+O0000057,U000003,R00089,Biryani,2026-08-21 17:00:00,4,17,True,False,True,15,2,Egg Biryani|Chicken Biryani,214.1,True
+O0000058,U000004,R00131,South Indian,2026-04-19 20:00:00,6,20,True,False,False,23,1,Masala Dosa,87.37,True
+O0000059,U000004,R00124,Beverages,2026-04-22 20:00:00,2,20,False,False,False,3,3,Milkshake|Cold Coffee|Fresh Juice,329.99,True
+O0000060,U000004,R00089,Biryani,2026-05-09 22:00:00,5,22,True,False,True,17,2,Egg Biryani|Veg Biryani,243.15,True
+O0000061,U000004,R00089,Biryani,2026-06-04 21:00:00,3,21,False,False,True,24,2,Egg Biryani|Veg Biryani,327.01,True
+O0000062,U000004,R00109,Biryani,2026-08-06 20:00:00,3,20,False,True,True,64,1,Chicken Biryani,107.51,True
+O0000063,U000004,R00034,Chinese,2026-08-18 23:00:00,1,23,False,True,False,12,2,Hakka Noodles|Chilli Chicken,308.19,True
+O0000064,U000005,R00145,North Indian,2026-05-15 17:00:00,4,17,True,False,True,55,1,Dal Makhani,136.26,True
+O0000065,U000005,R00039,Biryani,2026-05-21 21:00:00,3,21,False,False,False,6,3,Chicken Biryani|Egg Biryani|Mutton Biryani,623.3,True
+O0000066,U000005,R00023,Beverages,2026-08-02 16:00:00,6,16,True,False,False,73,1,Fresh Juice,167.95,True
+O0000067,U000005,R00145,North Indian,2026-09-06 18:00:00,6,18,True,False,True,34,1,Paneer Tikka,116.36,True
+O0000068,U000006,R00040,Rolls & Wraps,2026-03-31 17:00:00,1,17,False,False,True,7,3,Egg Roll|Paneer Roll|Chicken Roll,301.08,True
+O0000069,U000006,R00040,Rolls & Wraps,2026-04-07 20:00:00,1,20,False,False,True,7,1,Egg Roll,148.04,True
+O0000070,U000006,R00016,Beverages,2026-04-08 20:00:00,2,20,False,False,True,1,2,Cold Coffee|Milkshake,214.91,True
+O0000071,U000006,R00086,Rolls & Wraps,2026-04-12 18:00:00,6,18,True,False,True,6,2,Egg Roll|Chicken Roll,193.74,True
+O0000072,U000006,R00062,Pizza,2026-04-25 21:00:00,5,21,True,False,False,13,1,Margherita,102.66,True
+O0000073,U000006,R00086,Rolls & Wraps,2026-05-03 18:00:00,6,18,True,False,True,11,1,Egg Roll,147.38,True
+O0000074,U000006,R00043,Beverages,2026-05-18 18:00:00,0,18,False,False,True,15,3,Milkshake|Cold Coffee|Fresh Juice,305.46,True
+O0000075,U000006,R00043,Beverages,2026-05-21 17:00:00,3,17,False,False,True,3,2,Cold Coffee|Milkshake,132.55,True
+O0000076,U000006,R00043,Beverages,2026-05-31 21:00:00,6,21,True,False,True,7,1,Milkshake,70.78,True
+O0000077,U000006,R00040,Rolls & Wraps,2026-06-14 17:00:00,6,17,True,False,True,14,2,Chicken Roll|Paneer Roll,295.36,True
+O0000078,U000006,R00040,Rolls & Wraps,2026-07-06 15:00:00,0,15,False,True,True,22,2,Chicken Roll|Egg Roll,270.01,True
+O0000079,U000006,R00016,Beverages,2026-07-19 18:00:00,6,18,True,True,True,13,3,Fresh Juice|Milkshake|Cold Coffee,312.88,True
+O0000080,U000006,R00016,Beverages,2026-08-08 19:00:00,5,19,True,True,True,20,3,Milkshake|Cold Coffee|Fresh Juice,285.33,True
+O0000081,U000006,R00086,Rolls & Wraps,2026-08-16 18:00:00,6,18,True,False,True,5,1,Paneer Roll,115.18,True
+O0000082,U000006,R00043,Beverages,2026-09-06 19:00:00,6,19,True,True,True,22,2,Milkshake|Fresh Juice,167.13,True
+O0000083,U000006,R00090,North Indian,2026-09-10 22:00:00,3,22,False,False,False,4,1,Paneer Tikka,140.19,True
+O0000084,U000007,R00058,South Indian,2026-04-14 19:00:00,1,19,False,False,True,17,2,Idli Sambar|Uttapam,160.94,True
+O0000085,U000007,R00081,South Indian,2026-05-19 20:00:00,1,20,False,False,True,32,1,Uttapam,124.03,True
+O0000086,U000007,R00081,South Indian,2026-06-04 18:00:00,3,18,False,False,True,16,3,Idli Sambar|Masala Dosa|Uttapam,384.45,True
+O0000087,U000007,R00058,South Indian,2026-06-13 18:00:00,5,18,True,False,True,9,1,Idli Sambar,76.46,True
+O0000088,U000007,R00000,North Indian,2026-07-15 23:00:00,2,23,False,False,False,32,2,Butter Chicken|Naan Combo,293.16,True
+O0000089,U000007,R00081,South Indian,2026-07-30 17:00:00,3,17,False,False,True,15,1,Uttapam,108.57,True
+O0000090,U000007,R00058,South Indian,2026-08-11 20:00:00,1,20,False,True,True,12,3,Idli Sambar|Masala Dosa|Uttapam,299.15,True
+O0000091,U000007,R00011,Chinese,2026-08-26 20:00:00,2,20,False,False,False,15,3,Manchurian|Hakka Noodles|Fried Rice,267.57,True
+O0000092,U000007,R00076,South Indian,2026-09-12 22:00:00,5,22,True,False,False,17,2,Curd Rice|Uttapam,207.57,True
+O0000093,U000008,R00148,Fast Food,2026-06-07 19:00:00,6,19,True,False,True,70,3,Chicken Wrap|Loaded Fries|Burger Combo,208.85,True
+O0000094,U000009,R00059,Chinese,2026-04-04 21:00:00,5,21,True,False,False,6,2,Hakka Noodles|Chilli Chicken,152.53,False
+O0000095,U000009,R00132,Momos,2026-04-03 18:00:00,4,18,True,False,True,1,3,Steamed Momos|Tandoori Momos|Fried Momos,321.85,True
+O0000096,U000009,R00030,Biryani,2026-04-03 15:00:00,4,15,True,False,True,3,3,Veg Biryani|Mutton Biryani|Egg Biryani,201.42,True
+O0000097,U000009,R00132,Momos,2026-04-12 19:00:00,6,19,True,False,True,9,3,Fried Momos|Steamed Momos|Tandoori Momos,411.0,True
+O0000098,U000009,R00132,Momos,2026-04-15 15:00:00,2,15,False,False,True,3,2,Tandoori Momos|Fried Momos,324.57,True
+O0000099,U000009,R00091,Biryani,2026-04-17 20:00:00,4,20,True,False,True,2,2,Veg Biryani|Mutton Biryani,233.34,True
+O0000100,U000009,R00132,Momos,2026-04-17 23:00:00,4,23,True,False,True,3,1,Steamed Momos,105.99,True
+O0000101,U000009,R00030,Biryani,2026-04-18 23:00:00,5,23,True,False,False,1,2,Chicken Biryani|Veg Biryani,198.06,True
+O0000102,U000009,R00093,Biryani,2026-05-02 19:00:00,5,19,True,False,False,14,3,Chicken Biryani|Egg Biryani|Veg Biryani,490.52,False
+O0000103,U000009,R00091,Biryani,2026-05-01 21:00:00,4,21,True,False,True,1,3,Chicken Biryani|Mutton Biryani|Egg Biryani,344.12,True
+O0000104,U000009,R00059,Chinese,2026-05-05 21:00:00,1,21,False,False,False,4,2,Fried Rice|Chilli Chicken,132.82,False
+O0000105,U000009,R00091,Biryani,2026-05-15 21:00:00,4,21,True,False,True,7,2,Egg Biryani|Chicken Biryani,200.36,True
+O0000106,U000009,R00093,Biryani,2026-05-22 23:00:00,4,23,True,False,False,7,1,Veg Biryani,136.37,False
+O0000107,U000009,R00100,North Indian,2026-06-01 22:00:00,0,22,False,True,False,10,3,Paneer Tikka|Naan Combo|Butter Chicken,288.63,True
+O0000108,U000009,R00030,Biryani,2026-06-07 23:00:00,6,23,True,False,True,6,2,Veg Biryani|Chicken Biryani,183.58,True
+O0000109,U000009,R00132,Momos,2026-06-08 23:00:00,0,23,False,True,True,1,3,Fried Momos|Steamed Momos|Tandoori Momos,376.99,True
+O0000110,U000009,R00091,Biryani,2026-06-12 23:00:00,4,23,True,False,True,5,1,Veg Biryani,163.08,True
+O0000111,U000009,R00132,Momos,2026-06-19 21:00:00,4,21,True,True,True,10,2,Steamed Momos|Tandoori Momos,212.41,True
+O0000112,U000009,R00024,North Indian,2026-06-25 18:00:00,3,18,False,False,False,6,2,Paneer Tikka|Naan Combo,137.95,True
+O0000113,U000009,R00030,Biryani,2026-07-04 20:00:00,5,20,True,False,True,9,2,Chicken Biryani|Veg Biryani,213.24,True
+O0000114,U000009,R00008,Fast Food,2026-07-06 16:00:00,0,16,False,False,False,2,2,Chicken Wrap|Cheese Sandwich,136.04,True
+O0000115,U000009,R00132,Momos,2026-07-10 21:00:00,4,21,True,False,True,3,1,Steamed Momos,97.95,True
+O0000116,U000009,R00091,Biryani,2026-07-14 23:00:00,1,23,False,True,True,4,2,Chicken Biryani|Mutton Biryani,242.99,True
+O0000117,U000009,R00132,Momos,2026-07-24 19:00:00,4,19,True,False,True,10,3,Fried Momos|Tandoori Momos|Steamed Momos,316.58,True
+O0000118,U000009,R00132,Momos,2026-07-26 16:00:00,6,16,True,False,True,2,3,Tandoori Momos|Fried Momos|Steamed Momos,471.62,True
+O0000119,U000009,R00091,Biryani,2026-07-31 18:00:00,4,18,True,False,True,2,3,Egg Biryani|Veg Biryani|Chicken Biryani,489.19,True
+O0000120,U000009,R00030,Biryani,2026-08-02 23:00:00,6,23,True,True,True,2,1,Egg Biryani,63.03,True
+O0000121,U000009,R00132,Momos,2026-08-03 17:00:00,0,17,False,False,True,1,1,Steamed Momos,121.88,True
+O0000122,U000009,R00132,Momos,2026-08-04 20:00:00,1,20,False,False,True,1,2,Tandoori Momos|Fried Momos,274.54,True
+O0000123,U000009,R00030,Biryani,2026-08-07 17:00:00,4,17,True,False,True,3,3,Mutton Biryani|Chicken Biryani|Veg Biryani,325.16,True
+O0000124,U000009,R00132,Momos,2026-08-13 18:00:00,3,18,False,False,False,6,2,Fried Momos|Tandoori Momos,224.23,True
+O0000125,U000009,R00009,Fast Food,2026-08-15 19:00:00,5,19,True,False,False,2,3,Burger Combo|Chicken Wrap|Cheese Sandwich,408.0,True
+O0000126,U000009,R00030,Biryani,2026-08-20 20:00:00,3,20,False,True,False,5,2,Veg Biryani|Chicken Biryani,123.42,True
+O0000127,U000009,R00091,Biryani,2026-08-28 16:00:00,4,16,True,False,True,8,2,Mutton Biryani|Egg Biryani,248.75,True
+O0000128,U000009,R00060,Pizza,2026-09-01 19:00:00,1,19,False,False,False,4,3,Margherita|Farmhouse Pizza|Pepperoni Pizza,267.77,True
+O0000129,U000009,R00092,Rolls & Wraps,2026-09-09 19:00:00,2,19,False,True,False,8,3,Egg Roll|Paneer Roll|Chicken Roll,247.36,True
+O0000130,U000010,R00104,South Indian,2026-04-06 23:00:00,0,23,False,False,True,7,2,Idli Sambar|Curd Rice,155.11,True
+O0000131,U000010,R00091,Biryani,2026-04-12 23:00:00,6,23,True,False,False,6,3,Chicken Biryani|Mutton Biryani|Veg Biryani,400.38,True
+O0000132,U000010,R00049,South Indian,2026-04-29 19:00:00,2,19,False,False,True,17,2,Uttapam|Masala Dosa,324.93,True
+O0000133,U000010,R00113,Pizza,2026-05-06 18:00:00,2,18,False,False,True,7,1,Farmhouse Pizza,75.23,False
+O0000134,U000010,R00104,South Indian,2026-05-08 23:00:00,4,23,True,True,True,2,3,Masala Dosa|Uttapam|Idli Sambar,262.88,True
+O0000135,U000010,R00104,South Indian,2026-06-04 21:00:00,3,21,False,False,True,27,3,Idli Sambar|Uttapam|Curd Rice,273.77,True
+O0000136,U000010,R00143,Pizza,2026-06-14 19:00:00,6,19,True,False,False,10,2,Margherita|Farmhouse Pizza,270.78,True
+O0000137,U000010,R00049,South Indian,2026-06-27 16:00:00,5,16,True,True,True,13,3,Curd Rice|Masala Dosa|Uttapam,460.3,True
+O0000138,U000010,R00006,Fast Food,2026-07-12 23:00:00,6,23,True,False,False,15,1,Loaded Fries,100.2,True
+O0000139,U000010,R00113,Pizza,2026-08-03 18:00:00,0,18,False,False,True,20,3,Margherita|Pepperoni Pizza|Farmhouse Pizza,237.8,False
+O0000140,U000010,R00049,South Indian,2026-08-03 23:00:00,0,23,False,False,True,2,2,Uttapam|Idli Sambar,274.33,True
+O0000141,U000010,R00094,South Indian,2026-08-04 19:00:00,1,19,False,False,True,1,3,Masala Dosa|Curd Rice|Uttapam,384.92,True
+O0000142,U000010,R00094,South Indian,2026-08-12 22:00:00,2,22,False,True,True,8,3,Idli Sambar|Masala Dosa|Uttapam,387.58,True
+O0000143,U000010,R00113,Pizza,2026-08-20 18:00:00,3,18,False,True,True,8,1,Margherita,91.45,False
+O0000144,U000010,R00006,Fast Food,2026-09-04 19:00:00,4,19,True,True,False,15,1,Cheese Sandwich,133.61,True
+O0000145,U000011,R00018,Fast Food,2026-03-25 17:00:00,2,17,False,False,True,2,1,Chicken Wrap,64.73,True
+O0000146,U000011,R00018,Fast Food,2026-04-03 19:00:00,4,19,True,False,True,8,3,Loaded Fries|Cheese Sandwich|Chicken Wrap,181.49,True
+O0000147,U000011,R00018,Fast Food,2026-04-10 21:00:00,4,21,True,False,True,5,2,Cheese Sandwich|Loaded Fries,210.37,True
+O0000148,U000011,R00017,Biryani,2026-04-24 18:00:00,4,18,True,False,True,14,3,Mutton Biryani|Egg Biryani|Veg Biryani,421.08,True
+O0000149,U000011,R00018,Fast Food,2026-04-25 17:00:00,5,17,True,False,True,1,1,Burger Combo,96.74,True
+O0000150,U000011,R00108,Fast Food,2026-04-28 18:00:00,1,18,False,False,False,3,1,Loaded Fries,114.88,True
+O0000151,U000011,R00007,South Indian,2026-05-06 16:00:00,2,16,False,False,False,8,1,Curd Rice,108.17,True
+O0000152,U000011,R00017,Biryani,2026-05-08 18:00:00,4,18,True,False,True,4,3,Egg Biryani|Mutton Biryani|Chicken Biryani,455.21,True
+O0000153,U000011,R00018,Fast Food,2026-05-08 18:00:00,4,18,True,False,True,3,2,Chicken Wrap|Cheese Sandwich,162.7,True
+O0000154,U000011,R00138,Beverages,2026-05-22 15:00:00,4,15,True,False,False,14,1,Milkshake,86.49,True
+O0000155,U000011,R00108,Fast Food,2026-06-06 17:00:00,5,17,True,True,True,15,1,Chicken Wrap,168.31,True
+O0000156,U000011,R00018,Fast Food,2026-06-12 18:00:00,4,18,True,True,True,6,1,Cheese Sandwich,92.9,True
+O0000157,U000011,R00017,Biryani,2026-06-26 21:00:00,4,21,True,False,True,15,3,Egg Biryani|Chicken Biryani|Mutton Biryani,425.67,True
+O0000158,U000011,R00018,Fast Food,2026-07-17 20:00:00,4,20,True,True,True,21,2,Cheese Sandwich|Burger Combo,122.23,True
+O0000159,U000011,R00084,Pizza,2026-07-25 21:00:00,5,21,True,True,False,8,1,Pepperoni Pizza,132.09,True
+O0000160,U000011,R00108,Fast Food,2026-08-07 18:00:00,4,18,True,False,True,13,1,Burger Combo,105.26,True
+O0000161,U000011,R00018,Fast Food,2026-08-13 23:00:00,3,23,False,False,True,6,3,Loaded Fries|Burger Combo|Cheese Sandwich,313.4,True
+O0000162,U000011,R00108,Fast Food,2026-08-28 21:00:00,4,21,True,False,True,13,2,Chicken Wrap|Burger Combo,195.81,True
+O0000163,U000011,R00018,Fast Food,2026-09-03 20:00:00,3,20,False,False,True,6,1,Chicken Wrap,85.57,True
+O0000164,U000011,R00017,Biryani,2026-09-12 22:00:00,5,22,True,False,True,9,2,Chicken Biryani|Veg Biryani,264.13,True
+O0000165,U000012,R00084,Pizza,2026-03-25 23:00:00,2,23,False,True,False,2,1,Margherita,127.3,True
+O0000166,U000012,R00017,Biryani,2026-03-27 22:00:00,4,22,True,True,True,2,2,Chicken Biryani|Mutton Biryani,210.59,True
+O0000167,U000012,R00007,South Indian,2026-04-03 19:00:00,4,19,True,False,True,7,1,Uttapam,72.19,True
+O0000168,U000012,R00068,Pizza,2026-04-13 22:00:00,0,22,False,False,False,10,2,Farmhouse Pizza|Margherita,168.33,True
+O0000169,U000012,R00007,South Indian,2026-04-14 21:00:00,1,21,False,False,True,1,1,Idli Sambar,76.54,True
+O0000170,U000012,R00087,South Indian,2026-04-17 17:00:00,4,17,True,False,True,2,1,Idli Sambar,119.58,True
+O0000171,U000012,R00047,South Indian,2026-05-01 21:00:00,4,21,True,False,True,14,1,Curd Rice,112.32,True
+O0000172,U000012,R00007,South Indian,2026-05-15 22:00:00,4,22,True,False,True,11,2,Curd Rice|Idli Sambar,187.76,True
+O0000173,U000012,R00007,South Indian,2026-05-25 22:00:00,0,22,False,False,True,10,3,Curd Rice|Uttapam|Masala Dosa,268.92,True
+O0000174,U000012,R00122,North Indian,2026-05-29 19:00:00,4,19,True,False,True,3,1,Naan Combo,103.63,True
+O0000175,U000012,R00007,South Indian,2026-06-05 23:00:00,4,23,True,False,False,7,1,Curd Rice,80.07,True
+O0000176,U000012,R00122,North Indian,2026-06-09 23:00:00,1,23,False,False,True,4,1,Dal Makhani,88.32,True
+O0000177,U000012,R00087,South Indian,2026-06-12 18:00:00,4,18,True,False,True,6,3,Uttapam|Masala Dosa|Idli Sambar,410.46,True
+O0000178,U000012,R00087,South Indian,2026-06-13 22:00:00,5,22,True,False,True,1,3,Curd Rice|Idli Sambar|Masala Dosa,350.8,True
+O0000179,U000012,R00047,South Indian,2026-06-26 19:00:00,4,19,True,True,True,10,3,Uttapam|Masala Dosa|Idli Sambar,504.61,True
+O0000180,U000012,R00007,South Indian,2026-06-30 20:00:00,1,20,False,False,True,4,3,Curd Rice|Idli Sambar|Masala Dosa,203.22,True
+O0000181,U000012,R00007,South Indian,2026-07-17 16:00:00,4,16,True,False,True,16,2,Curd Rice|Idli Sambar,122.25,True
+O0000182,U000012,R00108,Fast Food,2026-07-19 21:00:00,6,21,True,True,False,2,3,Burger Combo|Cheese Sandwich|Loaded Fries,518.19,True
+O0000183,U000012,R00068,Pizza,2026-07-30 18:00:00,3,18,False,False,False,11,2,Pepperoni Pizza|Margherita,147.57,True
+O0000184,U000012,R00007,South Indian,2026-08-01 19:00:00,5,19,True,False,True,2,3,Idli Sambar|Curd Rice|Masala Dosa,198.73,True
+O0000185,U000012,R00041,Rolls & Wraps,2026-08-04 16:00:00,1,16,False,False,False,3,2,Egg Roll|Paneer Roll,162.28,True
+O0000186,U000012,R00087,South Indian,2026-08-07 19:00:00,4,19,True,True,True,6,3,Uttapam|Masala Dosa|Idli Sambar,497.14,True
+O0000187,U000012,R00122,North Indian,2026-08-23 21:00:00,6,21,True,False,True,16,3,Paneer Tikka|Dal Makhani|Naan Combo,272.18,True
+O0000188,U000012,R00087,South Indian,2026-09-05 17:00:00,5,17,True,False,True,13,1,Uttapam,156.13,True
+O0000189,U000012,R00037,North Indian,2026-09-07 23:00:00,0,23,False,True,False,2,1,Butter Chicken,67.42,True
+O0000190,U000012,R00122,North Indian,2026-09-11 22:00:00,4,22,True,False,True,5,2,Naan Combo|Butter Chicken,158.18,True
+O0000191,U000013,R00121,Momos,2026-04-10 20:00:00,4,20,True,False,False,13,3,Tandoori Momos|Fried Momos|Steamed Momos,319.05,True
+O0000192,U000013,R00001,Fast Food,2026-04-16 19:00:00,3,19,False,False,True,5,3,Cheese Sandwich|Loaded Fries|Chicken Wrap,416.94,True
+O0000193,U000013,R00064,Beverages,2026-04-22 21:00:00,2,21,False,False,False,6,3,Cold Coffee|Milkshake|Fresh Juice,382.32,True
+O0000194,U000013,R00001,Fast Food,2026-05-07 15:00:00,3,15,False,False,True,13,1,Loaded Fries,123.76,True
+O0000195,U000013,R00001,Fast Food,2026-06-04 21:00:00,3,21,False,True,True,27,1,Loaded Fries,133.17,True
+O0000196,U000013,R00099,Pizza,2026-06-11 17:00:00,3,17,False,False,True,6,3,Pepperoni Pizza|Farmhouse Pizza|Margherita,348.64,True
+O0000197,U000013,R00110,Chinese,2026-06-24 15:00:00,2,15,False,False,False,13,1,Chilli Chicken,175.39,True
+O0000198,U000013,R00106,Pizza,2026-06-25 15:00:00,3,15,False,False,True,4,2,Pepperoni Pizza|Margherita,171.06,True
+O0000199,U000013,R00106,Pizza,2026-06-30 22:00:00,1,22,False,False,True,5,3,Farmhouse Pizza|Margherita|Pepperoni Pizza,246.34,True
+O0000200,U000013,R00089,Biryani,2026-07-14 15:00:00,1,15,False,True,False,14,3,Mutton Biryani|Egg Biryani|Veg Biryani,388.88,True
+O0000201,U000013,R00099,Pizza,2026-07-20 22:00:00,0,22,False,False,True,6,2,Margherita|Farmhouse Pizza,248.25,True
+O0000202,U000013,R00106,Pizza,2026-08-06 19:00:00,3,19,False,False,True,14,3,Farmhouse Pizza|Pepperoni Pizza|Margherita,269.14,True
+O0000203,U000013,R00053,Rolls & Wraps,2026-08-14 21:00:00,4,21,True,False,False,8,3,Paneer Roll|Egg Roll|Chicken Roll,438.82,True
+O0000204,U000013,R00003,Chinese,2026-08-20 19:00:00,3,19,False,True,True,6,1,Fried Rice,75.84,True
+O0000205,U000013,R00001,Fast Food,2026-09-03 23:00:00,3,23,False,True,True,15,2,Loaded Fries|Chicken Wrap,304.51,True
+O0000206,U000013,R00099,Pizza,2026-09-10 21:00:00,3,21,False,False,True,5,3,Pepperoni Pizza|Farmhouse Pizza|Margherita,360.98,True
+O0000207,U000014,R00082,Pizza,2026-04-09 18:00:00,3,18,False,False,True,8,2,Farmhouse Pizza|Pepperoni Pizza,200.72,True
+O0000208,U000014,R00062,Pizza,2026-04-17 23:00:00,4,23,True,False,False,8,2,Pepperoni Pizza|Farmhouse Pizza,196.14,True
+O0000209,U000014,R00107,Desserts,2026-04-30 22:00:00,3,22,False,False,True,16,1,Brownie,105.65,True
+O0000210,U000014,R00082,Pizza,2026-05-28 22:00:00,3,22,False,False,True,28,3,Pepperoni Pizza|Margherita|Farmhouse Pizza,271.72,True
+O0000211,U000014,R00107,Desserts,2026-06-24 19:00:00,2,19,False,False,True,27,2,Brownie|Gulab Jamun,137.19,True
+O0000212,U000014,R00082,Pizza,2026-07-16 18:00:00,3,18,False,False,True,22,2,Margherita|Farmhouse Pizza,209.99,True
+O0000213,U000014,R00105,Momos,2026-08-14 23:00:00,4,23,True,False,False,29,3,Tandoori Momos|Fried Momos|Steamed Momos,238.28,True
+O0000214,U000014,R00115,Chinese,2026-08-28 18:00:00,4,18,True,False,False,14,2,Chilli Chicken|Manchurian,341.85,True
+O0000215,U000014,R00062,Pizza,2026-09-10 18:00:00,3,18,False,False,True,15,2,Margherita|Pepperoni Pizza,182.81,True
+O0000216,U000014,R00057,Biryani,2026-09-12 18:00:00,5,18,True,False,False,2,2,Veg Biryani|Egg Biryani,171.39,True
+O0000217,U000015,R00145,North Indian,2026-04-01 20:00:00,2,20,False,False,False,4,2,Paneer Tikka|Dal Makhani,302.82,True
+O0000218,U000015,R00095,Desserts,2026-04-03 22:00:00,4,22,True,True,False,2,3,Ice Cream Tub|Gulab Jamun|Brownie,504.16,True
+O0000219,U000015,R00039,Biryani,2026-04-05 20:00:00,6,20,True,False,True,2,1,Egg Biryani,168.63,True
+O0000220,U000015,R00095,Desserts,2026-04-15 20:00:00,2,20,False,False,True,10,1,Cheesecake Slice,161.59,True
+O0000221,U000015,R00036,Beverages,2026-04-19 23:00:00,6,23,True,False,False,4,2,Fresh Juice|Milkshake,337.41,True
+O0000222,U000015,R00029,South Indian,2026-04-28 19:00:00,1,19,False,False,False,9,2,Masala Dosa|Uttapam,326.12,True
+O0000223,U000015,R00039,Biryani,2026-04-28 17:00:00,1,17,False,False,True,2,2,Mutton Biryani|Veg Biryani,399.95,True
+O0000224,U000015,R00033,Biryani,2026-05-02 19:00:00,5,19,True,False,True,4,2,Veg Biryani|Egg Biryani,293.41,True
+O0000225,U000015,R00033,Biryani,2026-05-13 18:00:00,2,18,False,False,False,11,3,Egg Biryani|Chicken Biryani|Mutton Biryani,484.94,True
+O0000226,U000015,R00095,Desserts,2026-05-26 20:00:00,1,20,False,False,True,11,3,Cheesecake Slice|Ice Cream Tub|Gulab Jamun,381.85,True
+O0000227,U000015,R00078,South Indian,2026-06-03 22:00:00,2,22,False,False,False,8,3,Uttapam|Masala Dosa|Curd Rice,420.46,True
+O0000228,U000015,R00095,Desserts,2026-06-04 18:00:00,3,18,False,False,True,1,3,Ice Cream Tub|Cheesecake Slice|Brownie,516.21,True
+O0000229,U000015,R00127,Chinese,2026-06-09 14:00:00,1,14,False,True,True,4,3,Chilli Chicken|Hakka Noodles|Manchurian,392.87,True
+O0000230,U000015,R00036,Beverages,2026-06-12 20:00:00,4,20,True,False,False,3,3,Milkshake|Fresh Juice|Cold Coffee,398.76,True
+O0000231,U000015,R00033,Biryani,2026-06-16 23:00:00,1,23,False,True,True,4,2,Egg Biryani|Veg Biryani,193.27,True
+O0000232,U000015,R00095,Desserts,2026-06-18 20:00:00,3,20,False,False,True,2,2,Gulab Jamun|Brownie,318.95,True
+O0000233,U000015,R00033,Biryani,2026-06-20 22:00:00,5,22,True,False,True,2,2,Chicken Biryani|Veg Biryani,315.01,True
+O0000234,U000015,R00039,Biryani,2026-06-30 18:00:00,1,18,False,True,True,8,1,Veg Biryani,146.8,True
+O0000235,U000015,R00033,Biryani,2026-07-07 20:00:00,1,20,False,False,True,8,2,Mutton Biryani|Egg Biryani,285.58,True
+O0000236,U000015,R00095,Desserts,2026-07-20 19:00:00,0,19,False,False,False,13,3,Cheesecake Slice|Brownie|Ice Cream Tub,521.87,True
+O0000237,U000015,R00033,Biryani,2026-07-22 21:00:00,2,21,False,False,True,2,3,Egg Biryani|Chicken Biryani|Mutton Biryani,443.6,True
+O0000238,U000015,R00033,Biryani,2026-07-21 18:00:00,1,18,False,False,True,2,2,Veg Biryani|Egg Biryani,310.3,True
+O0000239,U000015,R00127,Chinese,2026-07-28 23:00:00,1,23,False,True,False,7,2,Chilli Chicken|Manchurian,316.41,True
+O0000240,U000015,R00095,Desserts,2026-08-04 20:00:00,1,20,False,False,True,7,1,Ice Cream Tub,132.88,True
+O0000241,U000015,R00042,Chinese,2026-08-15 18:00:00,5,18,True,True,True,11,1,Manchurian,96.9,True
+O0000242,U000015,R00095,Desserts,2026-08-25 16:00:00,1,16,False,False,False,10,1,Cheesecake Slice,111.22,True
+O0000243,U000015,R00033,Biryani,2026-08-30 22:00:00,6,22,True,False,False,5,3,Egg Biryani|Veg Biryani|Chicken Biryani,519.75,True
+O0000244,U000015,R00039,Biryani,2026-09-08 20:00:00,1,20,False,True,True,11,2,Veg Biryani|Chicken Biryani,464.38,True
+O0000245,U000015,R00114,North Indian,2026-09-10 20:00:00,3,20,False,False,False,2,2,Naan Combo|Dal Makhani,152.57,True
+O0000246,U000016,R00069,Desserts,2026-04-07 20:00:00,1,20,False,False,False,7,2,Cheesecake Slice|Gulab Jamun,125.66,True
+O0000247,U000016,R00008,Fast Food,2026-04-20 23:00:00,0,23,False,True,True,13,1,Chicken Wrap,71.76,True
+O0000248,U000016,R00149,Beverages,2026-05-18 18:00:00,0,18,False,False,True,29,3,Milkshake|Cold Coffee|Fresh Juice,504.9,True
+O0000249,U000016,R00098,Fast Food,2026-06-01 18:00:00,0,18,False,False,False,14,1,Chicken Wrap,105.7,True
+O0000250,U000016,R00077,Momos,2026-06-02 23:00:00,1,23,False,True,False,1,3,Fried Momos|Steamed Momos|Tandoori Momos,331.23,True
+O0000251,U000016,R00139,Beverages,2026-06-08 20:00:00,0,20,False,True,True,7,1,Fresh Juice,89.92,True
+O0000252,U000016,R00149,Beverages,2026-06-15 18:00:00,0,18,False,False,True,7,2,Cold Coffee|Fresh Juice,511.47,True
+O0000253,U000016,R00149,Beverages,2026-07-13 13:00:00,0,13,False,True,True,29,2,Cold Coffee|Fresh Juice,308.13,True
+O0000254,U000016,R00149,Beverages,2026-07-29 15:00:00,2,15,False,False,True,16,2,Milkshake|Cold Coffee,440.62,True
+O0000255,U000016,R00009,Fast Food,2026-08-29 21:00:00,5,21,True,True,True,31,1,Loaded Fries,130.34,True
+O0000256,U000016,R00093,Biryani,2026-09-07 23:00:00,0,23,False,True,True,6,3,Egg Biryani|Mutton Biryani|Chicken Biryani,522.56,False
+O0000257,U000017,R00036,Beverages,2026-04-08 22:00:00,2,22,False,False,False,18,1,Fresh Juice,108.02,True
+O0000258,U000017,R00146,Beverages,2026-04-20 18:00:00,0,18,False,False,False,12,3,Cold Coffee|Fresh Juice|Milkshake,231.37,True
+O0000259,U000017,R00039,Biryani,2026-05-06 21:00:00,2,21,False,False,True,16,1,Chicken Biryani,210.46,True
+O0000260,U000017,R00145,North Indian,2026-05-09 20:00:00,5,20,True,False,True,3,3,Butter Chicken|Naan Combo|Dal Makhani,389.15,True
+O0000261,U000017,R00145,North Indian,2026-05-16 20:00:00,5,20,True,False,True,7,1,Paneer Tikka,118.42,True
+O0000262,U000017,R00039,Biryani,2026-06-07 20:00:00,6,20,True,True,True,22,1,Veg Biryani,185.81,True
+O0000263,U000017,R00145,North Indian,2026-07-26 17:00:00,6,17,True,False,True,49,2,Naan Combo|Paneer Tikka,339.61,True
+O0000264,U000018,R00070,Pizza,2026-03-30 20:00:00,0,20,False,False,False,4,3,Farmhouse Pizza|Margherita|Pepperoni Pizza,298.73,True
+O0000265,U000018,R00042,Chinese,2026-04-04 23:00:00,5,23,True,False,True,8,3,Fried Rice|Chilli Chicken|Hakka Noodles,230.52,True
+O0000266,U000018,R00070,Pizza,2026-04-05 23:00:00,6,23,True,False,False,1,2,Margherita|Farmhouse Pizza,311.8,True
+O0000267,U000018,R00029,South Indian,2026-04-09 19:00:00,3,19,False,False,True,4,3,Uttapam|Curd Rice|Idli Sambar,447.37,True
+O0000268,U000018,R00042,Chinese,2026-04-11 21:00:00,5,21,True,False,True,4,2,Chilli Chicken|Hakka Noodles,199.72,True
+O0000269,U000018,R00146,Beverages,2026-04-12 21:00:00,6,21,True,False,False,1,3,Milkshake|Fresh Juice|Cold Coffee,281.53,True
+O0000270,U000018,R00013,Pizza,2026-04-13 15:00:00,0,15,False,False,False,1,3,Farmhouse Pizza|Margherita|Pepperoni Pizza,441.93,True
+O0000271,U000018,R00044,North Indian,2026-04-19 22:00:00,6,22,True,False,True,6,3,Paneer Tikka|Butter Chicken|Dal Makhani,473.52,True
+O0000272,U000018,R00095,Desserts,2026-04-21 18:00:00,1,18,False,False,False,2,2,Cheesecake Slice|Ice Cream Tub,289.94,True
+O0000273,U000018,R00042,Chinese,2026-04-25 18:00:00,5,18,True,False,True,7,1,Hakka Noodles,91.39,True
+O0000274,U000018,R00029,South Indian,2026-05-02 23:00:00,5,23,True,False,True,5,1,Idli Sambar,169.03,True
+O0000275,U000018,R00078,South Indian,2026-05-17 20:00:00,6,20,True,False,False,15,1,Uttapam,144.04,True
+O0000276,U000018,R00044,North Indian,2026-05-23 16:00:00,5,16,True,True,True,8,3,Dal Makhani|Naan Combo|Butter Chicken,483.06,True
+O0000277,U000018,R00044,North Indian,2026-05-23 16:00:00,5,16,True,False,True,3,1,Dal Makhani,158.61,True
+O0000278,U000018,R00044,North Indian,2026-05-31 23:00:00,6,23,True,False,True,8,1,Dal Makhani,115.28,True
+O0000279,U000018,R00042,Chinese,2026-05-30 21:00:00,5,21,True,False,True,2,1,Chilli Chicken,76.16,True
+O0000280,U000018,R00013,Pizza,2026-05-31 18:00:00,6,18,True,False,False,1,1,Farmhouse Pizza,132.07,True
+O0000281,U000018,R00029,South Indian,2026-05-30 23:00:00,5,23,True,False,True,2,2,Idli Sambar|Curd Rice,307.44,True
+O0000282,U000018,R00114,North Indian,2026-05-31 17:00:00,6,17,True,False,False,1,1,Dal Makhani,96.81,True
+O0000283,U000018,R00044,North Indian,2026-06-03 21:00:00,2,21,False,True,True,3,1,Paneer Tikka,152.93,True
+O0000284,U000018,R00033,Biryani,2026-06-11 16:00:00,3,16,False,False,False,8,3,Mutton Biryani|Egg Biryani|Chicken Biryani,420.39,True
+O0000285,U000018,R00044,North Indian,2026-06-15 17:00:00,0,17,False,False,False,4,3,Butter Chicken|Paneer Tikka|Dal Makhani,421.83,True
+O0000286,U000018,R00029,South Indian,2026-06-20 17:00:00,5,17,True,False,True,3,3,Curd Rice|Masala Dosa|Idli Sambar,444.29,True
+O0000287,U000018,R00042,Chinese,2026-06-27 20:00:00,5,20,True,False,True,4,1,Chilli Chicken,77.49,True
+O0000288,U000018,R00029,South Indian,2026-06-27 16:00:00,5,16,True,False,True,1,1,Masala Dosa,162.14,True
+O0000289,U000018,R00044,North Indian,2026-07-04 18:00:00,5,18,True,False,True,7,1,Butter Chicken,142.14,True
+O0000290,U000018,R00145,North Indian,2026-07-11 14:00:00,5,14,True,False,False,7,2,Paneer Tikka|Dal Makhani,339.27,True
+O0000291,U000018,R00145,North Indian,2026-07-14 21:00:00,1,21,False,False,False,3,1,Paneer Tikka,158.33,True
+O0000292,U000018,R00042,Chinese,2026-07-23 18:00:00,3,18,False,False,True,9,2,Fried Rice|Manchurian,139.92,True
+O0000293,U000018,R00042,Chinese,2026-07-25 18:00:00,5,18,True,False,True,2,3,Fried Rice|Chilli Chicken|Hakka Noodles,186.84,True
+O0000294,U000018,R00114,North Indian,2026-07-27 20:00:00,0,20,False,True,False,2,1,Dal Makhani,90.61,True
+O0000295,U000018,R00146,Beverages,2026-07-31 18:00:00,4,18,True,False,False,4,2,Fresh Juice|Cold Coffee,194.13,True
+O0000296,U000018,R00029,South Indian,2026-08-09 17:00:00,6,17,True,False,True,9,2,Masala Dosa|Curd Rice,279.17,True
+O0000297,U000018,R00042,Chinese,2026-08-13 19:00:00,3,19,False,False,False,4,2,Chilli Chicken|Hakka Noodles,156.44,True
+O0000298,U000018,R00127,Chinese,2026-08-16 20:00:00,6,20,True,False,False,3,1,Chilli Chicken,138.82,True
+O0000299,U000018,R00070,Pizza,2026-08-19 20:00:00,2,20,False,False,False,3,1,Pepperoni Pizza,121.57,True

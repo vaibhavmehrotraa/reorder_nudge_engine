@@ -1,0 +1,41 @@
+Simulation window: 2026-03-20 to 2026-09-18
+
+FUNNEL (overall):
+  trigger_fired: 48460
+  nudge_sent: 11400
+  nudge_opened: 3290
+  reorder_placed: 525
+
+FUNNEL by trigger type:
+  cadence: {'trigger_fired': 33491, 'nudge_sent': 6307, 'nudge_opened': 1378, 'reorder_placed': 135}
+  contextual: {'trigger_fired': 8214, 'nudge_sent': 2412, 'nudge_opened': 967, 'reorder_placed': 237}
+  day_of_week: {'trigger_fired': 6755, 'nudge_sent': 2681, 'nudge_opened': 945, 'reorder_placed': 153}
+
+Suppression reasons (nudges evaluated but not sent):
+  frequency_cap: 5626
+  already_ordered_today: 1790
+  restaurant_inactive: 1138
+
+EXPERIMENT (post-eligibility window):
+  n_treatment: 794
+  n_holdout: 825
+  mean_orders_treatment: 11.203
+  mean_orders_holdout: 10.268
+  mean_incremental_orders_treatment: 0.661
+  measured_lift: 0.935
+  relative_lift_pct: 9.11
+  t_stat: 1.95
+  p_value: 0.05132676795733928
+  significant_at_05: False
+  cohens_d: 0.097
+  bootstrap_ci_95: [0.022, 1.885]
+
+Cohort breakdown (frequency segment x group):
+  {'frequency_segment': 'dormant', 'experiment_group': 'holdout', 'mean_total_orders': 0.848, 'n_users': 46}
+  {'frequency_segment': 'dormant', 'experiment_group': 'treatment', 'mean_total_orders': 0.852, 'n_users': 27}
+  {'frequency_segment': 'occasional', 'experiment_group': 'holdout', 'mean_total_orders': 2.959, 'n_users': 317}
+  {'frequency_segment': 'occasional', 'experiment_group': 'treatment', 'mean_total_orders': 3.423, 'n_users': 310}
+  {'frequency_segment': 'power', 'experiment_group': 'holdout', 'mean_total_orders': 28.202, 'n_users': 129}
+  {'frequency_segment': 'power', 'experiment_group': 'treatment', 'mean_total_orders': 30.234, 'n_users': 128}
+  {'frequency_segment': 'regular', 'experiment_group': 'holdout', 'mean_total_orders': 11.58, 'n_users': 333}
+  {'frequency_segment': 'regular', 'experiment_group': 'treatment', 'mean_total_orders': 11.979, 'n_users': 329}

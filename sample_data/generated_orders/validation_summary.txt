@@ -1,0 +1,40 @@
+Users: 2000 | Restaurants: 150 | Orders: 25229
+
+Orders per user by frequency segment (mean):
+frequency_segment
+dormant        2.8
+occasional     6.8
+power         34.0
+regular       16.0
+
+Share of orders going to a 'regular' restaurant (repeat concentration):
+  67.97%
+
+Gap-days histogram (bucketed) — should show weekly spikes at 7/14/21/28-30:
+gap_days_since_prev_order
+1-3      5909
+4-6      4699
+7        3646
+8-13     2929
+14       2192
+15-20    1785
+21        695
+22-27     491
+28-30     923
+30+      1960
+
+Day-of-week order distribution (0=Mon..6=Sun) — should skew toward Thu-Sun:
+order_dow
+0    3097
+1    3037
+2    2824
+3    3208
+4    3988
+5    4470
+6    4605
+
+Share of orders flagged rainy:
+  28.21%
+
+Restaurants flagged inactive (for eligibility-check testing):
+  7 of 150 (4.7%)

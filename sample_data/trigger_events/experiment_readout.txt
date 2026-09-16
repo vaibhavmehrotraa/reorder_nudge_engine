@@ -1,0 +1,19 @@
+Eligible & assigned users: 1885 (933 treatment / 952 holdout)
+
+Mean orders per user, by experiment group:
+           organic_orders  incremental_orders  total_orders
+group                                                      
+holdout            13.254               0.000        13.254
+treatment          13.324               0.563        13.886
+
+Measured incremental orders/user (treatment total − holdout total): 0.632
+This should be in the neighborhood of the incremental orders the treatment group actually
+received (see 'incremental_orders' column above) — that's the number a real experiment
+readout would report as the causal effect. Compare it against P_INCREMENTAL_ORDER_GIVEN_OPEN
+x P_OPEN x (trigger fire rate) in the script to sanity-check the simulation end to end.
+
+Incremental orders by trigger type:
+trigger_type
+contextual     237
+day_of_week    153
+cadence        135

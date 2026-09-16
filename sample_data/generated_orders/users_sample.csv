@@ -1,0 +1,301 @@
+user_id,city,signup_date,frequency_segment,cuisine_preference,habit_weekday,orders_comfort_food_when_rainy
+U000000,Delhi,2025-01-01,regular,"['Fast Food', 'South Indian']",4,True
+U000001,Bengaluru,2024-08-09,regular,"['Chinese', 'North Indian']",5,True
+U000002,Chennai,2025-01-18,regular,"['Rolls & Wraps', 'Pizza']",3,False
+U000003,Hyderabad,2024-08-12,regular,"['Biryani', 'Rolls & Wraps']",4,False
+U000004,Hyderabad,2024-09-18,occasional,"['North Indian', 'Biryani']",3,True
+U000005,Mumbai,2024-01-01,dormant,"['Biryani', 'North Indian']",6,False
+U000006,Chennai,2024-07-09,regular,"['Rolls & Wraps', 'Beverages']",6,False
+U000007,Pune,2024-07-07,occasional,"['South Indian', 'Beverages']",1,False
+U000008,Pune,2024-07-24,dormant,"['Fast Food', 'Rolls & Wraps']",6,True
+U000009,Bengaluru,2024-01-21,power,"['Momos', 'Biryani']",4,False
+U000010,Bengaluru,2024-01-21,regular,"['Pizza', 'South Indian']",0,False
+U000011,Delhi,2025-01-25,regular,"['Fast Food', 'Biryani']",4,True
+U000012,Delhi,2024-12-11,power,"['North Indian', 'South Indian']",4,True
+U000013,Hyderabad,2024-08-08,regular,"['Pizza', 'Fast Food']",3,True
+U000014,Chennai,2024-07-10,regular,"['Desserts', 'Pizza']",3,False
+U000015,Mumbai,2024-07-16,power,"['Fast Food', 'Rolls & Wraps']",1,True
+U000016,Bengaluru,2025-01-02,regular,"['North Indian', 'Beverages']",0,True
+U000017,Mumbai,2024-07-09,occasional,"['Biryani', 'North Indian']",5,False
+U000018,Mumbai,2024-12-07,power,"['Desserts', 'Fast Food']",5,False
+U000019,Bengaluru,2024-04-09,regular,"['Momos', 'Rolls & Wraps']",5,False
+U000020,Pune,2024-11-21,regular,"['South Indian', 'Chinese']",5,True
+U000021,Pune,2024-09-11,regular,"['Rolls & Wraps', 'Biryani']",0,True
+U000022,Pune,2024-03-07,power,"['Momos', 'Pizza']",5,True
+U000023,Pune,2024-02-29,dormant,"['Biryani', 'Momos']",1,False
+U000024,Pune,2024-07-21,regular,"['Beverages', 'South Indian']",0,False
+U000025,Bengaluru,2024-06-04,occasional,"['South Indian', 'Momos']",6,False
+U000026,Mumbai,2024-04-19,occasional,"['North Indian', 'Desserts']",3,False
+U000027,Hyderabad,2024-03-16,dormant,"['North Indian', 'Beverages']",2,False
+U000028,Hyderabad,2024-09-01,regular,"['South Indian', 'Momos']",5,False
+U000029,Delhi,2024-04-17,occasional,"['Desserts', 'Pizza']",4,False
+U000030,Bengaluru,2024-11-14,power,"['Momos', 'Chinese']",1,False
+U000031,Delhi,2024-03-05,regular,"['Fast Food', 'Desserts']",6,True
+U000032,Chennai,2024-12-09,regular,"['Beverages', 'Rolls & Wraps']",4,False
+U000033,Mumbai,2024-09-15,dormant,"['Chinese', 'Fast Food']",5,False
+U000034,Chennai,2024-08-15,occasional,"['Chinese', 'South Indian']",6,False
+U000035,Chennai,2024-01-02,power,"['South Indian', 'Fast Food']",0,False
+U000036,Pune,2024-10-14,regular,"['Rolls & Wraps', 'Beverages']",3,False
+U000037,Delhi,2024-06-02,occasional,"['Chinese', 'North Indian']",6,False
+U000038,Delhi,2024-05-30,regular,"['Chinese', 'Beverages']",2,False
+U000039,Bengaluru,2024-01-10,regular,"['Pizza', 'Rolls & Wraps']",1,False
+U000040,Delhi,2024-04-21,dormant,"['Fast Food', 'Biryani']",4,False
+U000041,Mumbai,2024-02-21,regular,"['Beverages', 'North Indian']",6,False
+U000042,Chennai,2024-02-14,occasional,"['Beverages', 'Biryani']",5,False
+U000043,Mumbai,2024-02-12,dormant,"['Rolls & Wraps', 'Desserts']",6,True
+U000044,Chennai,2024-05-01,regular,"['Momos', 'Biryani']",6,False
+U000045,Bengaluru,2024-07-27,occasional,"['North Indian', 'South Indian']",2,False
+U000046,Hyderabad,2024-10-21,occasional,"['Desserts', 'Biryani']",4,False
+U000047,Delhi,2024-01-18,occasional,"['South Indian', 'Desserts']",1,False
+U000048,Delhi,2024-04-15,power,"['South Indian', 'Rolls & Wraps']",4,True
+U000049,Mumbai,2024-12-17,regular,"['Desserts', 'South Indian']",6,True
+U000050,Pune,2024-04-09,occasional,"['Beverages', 'Biryani']",6,False
+U000051,Bengaluru,2024-05-11,occasional,"['Biryani', 'Fast Food']",4,False
+U000052,Delhi,2024-02-22,regular,"['South Indian', 'Chinese']",4,False
+U000053,Chennai,2024-05-29,regular,"['Beverages', 'Fast Food']",3,True
+U000054,Bengaluru,2025-01-01,power,"['North Indian', 'Chinese']",4,True
+U000055,Hyderabad,2024-09-21,occasional,"['South Indian', 'Rolls & Wraps']",6,False
+U000056,Chennai,2024-03-02,occasional,"['Pizza', 'Beverages']",0,True
+U000057,Delhi,2024-09-20,occasional,"['Momos', 'North Indian']",6,True
+U000058,Hyderabad,2024-06-24,dormant,"['Biryani', 'Desserts']",6,True
+U000059,Bengaluru,2024-06-08,power,"['Pizza', 'Fast Food']",1,False
+U000060,Bengaluru,2025-01-03,regular,"['Chinese', 'Momos']",4,False
+U000061,Pune,2024-01-30,occasional,"['Fast Food', 'Desserts']",3,True
+U000062,Chennai,2024-12-04,occasional,"['Momos', 'North Indian']",6,False
+U000063,Delhi,2024-06-30,dormant,"['Fast Food', 'Pizza']",3,False
+U000064,Pune,2024-10-22,regular,"['Chinese', 'Fast Food']",5,False
+U000065,Hyderabad,2024-05-12,dormant,"['Chinese', 'South Indian']",3,True
+U000066,Mumbai,2024-02-20,regular,"['North Indian', 'Pizza']",5,False
+U000067,Pune,2024-12-20,power,"['Rolls & Wraps', 'Biryani']",5,False
+U000068,Chennai,2024-09-24,regular,"['South Indian', 'Beverages']",1,True
+U000069,Mumbai,2024-12-31,occasional,"['Pizza', 'Rolls & Wraps']",4,False
+U000070,Hyderabad,2024-09-01,dormant,"['Biryani', 'Desserts']",3,False
+U000071,Hyderabad,2024-06-25,regular,"['Momos', 'Desserts']",4,False
+U000072,Delhi,2024-06-26,occasional,"['South Indian', 'Beverages']",3,False
+U000073,Chennai,2024-06-26,occasional,"['Rolls & Wraps', 'Momos']",2,False
+U000074,Mumbai,2024-12-03,dormant,"['Beverages', 'Rolls & Wraps']",5,False
+U000075,Pune,2024-09-07,occasional,"['Desserts', 'Fast Food']",5,True
+U000076,Delhi,2024-08-22,regular,"['Fast Food', 'Chinese']",6,False
+U000077,Mumbai,2024-05-26,regular,"['Beverages', 'North Indian']",6,False
+U000078,Pune,2024-11-05,regular,"['South Indian', 'Momos']",6,True
+U000079,Delhi,2024-01-11,regular,"['Chinese', 'Fast Food']",6,False
+U000080,Chennai,2024-02-25,power,"['Pizza', 'Momos']",6,False
+U000081,Mumbai,2024-10-11,power,"['Momos', 'Pizza']",4,False
+U000082,Mumbai,2024-10-01,occasional,"['Desserts', 'Pizza']",6,False
+U000083,Chennai,2024-09-30,power,"['Desserts', 'South Indian']",3,False
+U000084,Mumbai,2024-01-21,regular,"['Chinese', 'Desserts']",6,False
+U000085,Delhi,2025-01-09,dormant,"['Beverages', 'Chinese']",5,False
+U000086,Mumbai,2024-12-23,occasional,"['Biryani', 'South Indian']",1,True
+U000087,Chennai,2024-04-22,occasional,"['Momos', 'North Indian']",0,True
+U000088,Bengaluru,2024-01-14,occasional,"['Chinese', 'Desserts']",2,True
+U000089,Pune,2024-04-17,dormant,"['Pizza', 'Momos']",6,True
+U000090,Hyderabad,2024-10-22,regular,"['Biryani', 'Momos']",4,False
+U000091,Pune,2024-05-03,occasional,"['Fast Food', 'Chinese']",2,False
+U000092,Pune,2024-02-04,power,"['South Indian', 'Chinese']",6,True
+U000093,Mumbai,2024-12-07,dormant,"['South Indian', 'Beverages']",4,True
+U000094,Chennai,2025-01-25,dormant,"['Beverages', 'Rolls & Wraps']",2,False
+U000095,Mumbai,2024-04-10,regular,"['Desserts', 'North Indian']",5,False
+U000096,Delhi,2024-01-11,occasional,"['Fast Food', 'North Indian']",4,True
+U000097,Hyderabad,2024-04-13,regular,"['Desserts', 'South Indian']",5,True
+U000098,Bengaluru,2024-07-27,regular,"['Chinese', 'South Indian']",5,True
+U000099,Hyderabad,2024-01-04,power,"['South Indian', 'Momos']",5,True
+U000100,Bengaluru,2024-07-06,dormant,"['Pizza', 'Fast Food']",0,True
+U000101,Chennai,2024-07-04,occasional,"['South Indian', 'Chinese']",2,True
+U000102,Bengaluru,2024-06-18,regular,"['South Indian', 'Fast Food']",6,True
+U000103,Bengaluru,2024-04-07,regular,"['Momos', 'North Indian']",3,False
+U000104,Pune,2024-12-21,regular,"['North Indian', 'Beverages']",1,True
+U000105,Bengaluru,2024-06-11,occasional,"['South Indian', 'Beverages']",5,False
+U000106,Bengaluru,2025-02-02,occasional,"['North Indian', 'Chinese']",3,False
+U000107,Delhi,2025-01-01,occasional,"['Beverages', 'Pizza']",6,False
+U000108,Mumbai,2025-01-23,occasional,"['Rolls & Wraps', 'Chinese']",5,True
+U000109,Delhi,2024-03-27,regular,"['Beverages', 'South Indian']",6,False
+U000110,Pune,2024-06-12,regular,"['Chinese', 'Fast Food']",6,False
+U000111,Hyderabad,2024-11-05,regular,"['Beverages', 'Biryani']",5,False
+U000112,Delhi,2024-08-09,occasional,"['Chinese', 'Beverages']",4,True
+U000113,Delhi,2024-07-19,regular,"['Beverages', 'Desserts']",2,False
+U000114,Hyderabad,2024-04-12,occasional,"['Fast Food', 'Rolls & Wraps']",5,False
+U000115,Chennai,2024-09-19,power,"['Beverages', 'Rolls & Wraps']",6,False
+U000116,Hyderabad,2024-01-16,power,"['Rolls & Wraps', 'Desserts']",0,False
+U000117,Hyderabad,2024-04-05,dormant,"['Biryani', 'Fast Food']",0,False
+U000118,Chennai,2024-12-17,regular,"['Rolls & Wraps', 'Chinese']",3,True
+U000119,Hyderabad,2024-02-29,occasional,"['Fast Food', 'Biryani']",6,False
+U000120,Chennai,2024-03-16,dormant,"['Rolls & Wraps', 'Momos']",4,True
+U000121,Chennai,2024-07-21,dormant,"['Fast Food', 'Biryani']",6,False
+U000122,Chennai,2024-05-27,regular,"['Fast Food', 'South Indian']",6,False
+U000123,Bengaluru,2024-10-09,regular,"['Biryani', 'Pizza']",0,False
+U000124,Delhi,2024-10-03,occasional,"['Momos', 'South Indian']",4,False
+U000125,Pune,2024-08-20,power,"['Fast Food', 'Beverages']",2,True
+U000126,Delhi,2024-05-17,regular,"['South Indian', 'North Indian']",4,False
+U000127,Chennai,2024-04-08,dormant,"['North Indian', 'Momos']",6,False
+U000128,Bengaluru,2024-06-21,regular,"['North Indian', 'Chinese']",6,False
+U000129,Hyderabad,2024-03-22,power,"['Momos', 'Desserts']",6,True
+U000130,Pune,2024-11-30,dormant,"['South Indian', 'Rolls & Wraps']",6,True
+U000131,Bengaluru,2024-01-28,occasional,"['Rolls & Wraps', 'Beverages']",4,True
+U000132,Mumbai,2025-01-22,power,"['Biryani', 'Chinese']",3,False
+U000133,Mumbai,2024-09-26,power,"['Pizza', 'South Indian']",6,False
+U000134,Delhi,2025-01-12,dormant,"['Momos', 'South Indian']",4,False
+U000135,Pune,2024-03-27,dormant,"['Rolls & Wraps', 'Fast Food']",4,False
+U000136,Mumbai,2024-05-24,regular,"['Chinese', 'South Indian']",0,False
+U000137,Bengaluru,2024-03-18,regular,"['Rolls & Wraps', 'Beverages']",0,True
+U000138,Mumbai,2025-01-25,regular,"['Biryani', 'Pizza']",6,False
+U000139,Hyderabad,2024-08-13,regular,"['Chinese', 'North Indian']",0,True
+U000140,Delhi,2024-12-30,occasional,"['Biryani', 'Momos']",2,False
+U000141,Hyderabad,2024-09-17,occasional,"['Pizza', 'Desserts']",3,True
+U000142,Delhi,2024-06-24,regular,"['Momos', 'Beverages']",5,False
+U000143,Delhi,2024-09-03,regular,"['Biryani', 'South Indian']",5,True
+U000144,Pune,2024-10-15,regular,"['Rolls & Wraps', 'South Indian']",2,True
+U000145,Chennai,2024-07-31,occasional,"['Fast Food', 'North Indian']",4,False
+U000146,Hyderabad,2024-07-10,occasional,"['Rolls & Wraps', 'Fast Food']",5,True
+U000147,Bengaluru,2024-09-01,occasional,"['North Indian', 'Momos']",4,False
+U000148,Pune,2024-01-25,occasional,"['Pizza', 'Rolls & Wraps']",6,True
+U000149,Hyderabad,2024-03-18,occasional,"['Pizza', 'Beverages']",3,False
+U000150,Chennai,2025-01-19,occasional,"['Desserts', 'Chinese']",6,False
+U000151,Delhi,2024-07-14,occasional,"['Momos', 'Fast Food']",5,True
+U000152,Delhi,2024-09-07,regular,"['Pizza', 'South Indian']",3,True
+U000153,Chennai,2024-11-16,dormant,"['Biryani', 'South Indian']",3,False
+U000154,Pune,2024-10-31,dormant,"['South Indian', 'Pizza']",4,False
+U000155,Mumbai,2024-06-04,regular,"['Beverages', 'Biryani']",1,False
+U000156,Bengaluru,2024-01-28,occasional,"['Fast Food', 'Chinese']",5,False
+U000157,Pune,2024-06-24,regular,"['Biryani', 'Pizza']",4,True
+U000158,Delhi,2024-06-05,occasional,"['Desserts', 'Biryani']",3,True
+U000159,Pune,2024-01-06,regular,"['Pizza', 'Chinese']",4,True
+U000160,Bengaluru,2025-01-07,occasional,"['Chinese', 'Fast Food']",6,False
+U000161,Hyderabad,2024-06-25,occasional,"['Rolls & Wraps', 'Beverages']",6,False
+U000162,Pune,2024-01-07,power,"['Fast Food', 'Momos']",4,False
+U000163,Delhi,2024-09-14,occasional,"['Beverages', 'Pizza']",2,False
+U000164,Pune,2025-02-01,dormant,"['Rolls & Wraps', 'Desserts']",3,True
+U000165,Chennai,2024-11-24,regular,"['Momos', 'Desserts']",3,False
+U000166,Mumbai,2024-03-08,regular,"['Biryani', 'South Indian']",6,True
+U000167,Bengaluru,2024-01-02,dormant,"['Beverages', 'Desserts']",2,False
+U000168,Chennai,2024-12-31,regular,"['South Indian', 'Desserts']",6,True
+U000169,Pune,2024-05-16,regular,"['Momos', 'Rolls & Wraps']",4,True
+U000170,Pune,2024-11-06,regular,"['Momos', 'Pizza']",6,True
+U000171,Delhi,2024-08-16,power,"['Momos', 'Chinese']",0,True
+U000172,Pune,2024-11-19,occasional,"['North Indian', 'Desserts']",5,True
+U000173,Delhi,2024-03-10,regular,"['Momos', 'South Indian']",4,False
+U000174,Pune,2024-10-03,occasional,"['Beverages', 'South Indian']",4,False
+U000175,Delhi,2025-02-01,regular,"['Desserts', 'North Indian']",1,False
+U000176,Mumbai,2024-03-15,regular,"['Fast Food', 'Chinese']",6,False
+U000177,Mumbai,2024-09-11,dormant,"['Desserts', 'Biryani']",3,True
+U000178,Hyderabad,2024-06-09,dormant,"['Biryani', 'Rolls & Wraps']",4,True
+U000179,Chennai,2024-11-10,regular,"['Momos', 'Fast Food']",2,False
+U000180,Mumbai,2024-12-05,dormant,"['North Indian', 'Biryani']",6,True
+U000181,Bengaluru,2024-08-03,occasional,"['Beverages', 'Desserts']",6,False
+U000182,Chennai,2024-06-25,occasional,"['Rolls & Wraps', 'North Indian']",5,False
+U000183,Hyderabad,2024-09-05,occasional,"['Fast Food', 'Biryani']",2,False
+U000184,Hyderabad,2024-08-21,occasional,"['Pizza', 'Chinese']",6,True
+U000185,Pune,2024-04-25,occasional,"['Desserts', 'Biryani']",2,False
+U000186,Bengaluru,2024-10-15,dormant,"['Beverages', 'Pizza']",4,False
+U000187,Chennai,2024-01-29,occasional,"['Biryani', 'Rolls & Wraps']",4,False
+U000188,Hyderabad,2024-11-11,regular,"['Momos', 'Chinese']",6,True
+U000189,Chennai,2024-03-23,occasional,"['Chinese', 'Biryani']",5,False
+U000190,Delhi,2024-03-29,power,"['Pizza', 'Rolls & Wraps']",4,True
+U000191,Hyderabad,2024-11-23,regular,"['Beverages', 'Pizza']",4,False
+U000192,Delhi,2024-10-26,power,"['Fast Food', 'Biryani']",5,False
+U000193,Chennai,2024-08-07,regular,"['Fast Food', 'Beverages']",2,True
+U000194,Delhi,2025-01-18,power,"['Pizza', 'Chinese']",5,False
+U000195,Hyderabad,2024-02-19,occasional,"['Fast Food', 'North Indian']",2,False
+U000196,Bengaluru,2024-05-19,dormant,"['Momos', 'Rolls & Wraps']",6,False
+U000197,Bengaluru,2024-11-26,dormant,"['Rolls & Wraps', 'Biryani']",2,True
+U000198,Delhi,2024-01-29,regular,"['Beverages', 'North Indian']",1,False
+U000199,Bengaluru,2024-02-04,occasional,"['Desserts', 'North Indian']",6,False
+U000200,Chennai,2024-10-12,occasional,"['Chinese', 'Fast Food']",4,True
+U000201,Delhi,2024-11-08,occasional,"['Fast Food', 'Biryani']",2,False
+U000202,Chennai,2024-10-01,regular,"['Momos', 'Rolls & Wraps']",5,True
+U000203,Bengaluru,2024-06-29,regular,"['Desserts', 'Beverages']",3,False
+U000204,Delhi,2024-08-09,regular,"['Desserts', 'Biryani']",5,True
+U000205,Hyderabad,2024-09-03,occasional,"['Desserts', 'Momos']",0,True
+U000206,Delhi,2024-02-04,regular,"['Biryani', 'Rolls & Wraps']",5,True
+U000207,Delhi,2024-07-04,dormant,"['Fast Food', 'North Indian']",4,False
+U000208,Pune,2025-01-06,occasional,"['Rolls & Wraps', 'Fast Food']",5,False
+U000209,Hyderabad,2024-06-12,power,"['Desserts', 'Fast Food']",6,False
+U000210,Chennai,2025-01-19,occasional,"['Fast Food', 'Beverages']",2,True
+U000211,Mumbai,2024-09-15,power,"['Chinese', 'Beverages']",5,True
+U000212,Chennai,2024-03-02,occasional,"['North Indian', 'Beverages']",5,True
+U000213,Mumbai,2024-05-03,occasional,"['Chinese', 'Biryani']",2,False
+U000214,Bengaluru,2024-10-29,occasional,"['Rolls & Wraps', 'Fast Food']",2,True
+U000215,Chennai,2024-09-29,regular,"['Biryani', 'Desserts']",6,False
+U000216,Delhi,2024-09-12,occasional,"['Rolls & Wraps', 'Desserts']",2,False
+U000217,Chennai,2024-03-30,dormant,"['Beverages', 'Biryani']",6,False
+U000218,Hyderabad,2024-11-15,dormant,"['Biryani', 'Rolls & Wraps']",4,False
+U000219,Mumbai,2024-08-18,occasional,"['Fast Food', 'Momos']",5,True
+U000220,Hyderabad,2024-02-20,regular,"['Chinese', 'South Indian']",4,True
+U000221,Chennai,2025-01-28,occasional,"['South Indian', 'Fast Food']",3,True
+U000222,Chennai,2024-04-20,occasional,"['North Indian', 'Desserts']",5,True
+U000223,Bengaluru,2024-02-11,dormant,"['South Indian', 'Momos']",4,True
+U000224,Delhi,2024-11-17,power,"['Rolls & Wraps', 'Momos']",2,False
+U000225,Bengaluru,2024-09-29,occasional,"['Rolls & Wraps', 'South Indian']",5,False
+U000226,Chennai,2025-01-16,occasional,"['Pizza', 'Fast Food']",4,True
+U000227,Mumbai,2024-10-20,regular,"['South Indian', 'North Indian']",5,True
+U000228,Hyderabad,2024-09-14,regular,"['Biryani', 'Desserts']",6,False
+U000229,Pune,2024-12-11,power,"['Fast Food', 'Desserts']",2,True
+U000230,Hyderabad,2024-06-30,regular,"['Fast Food', 'South Indian']",6,False
+U000231,Mumbai,2024-08-31,regular,"['Momos', 'Rolls & Wraps']",6,False
+U000232,Chennai,2024-11-01,power,"['Beverages', 'Desserts']",6,False
+U000233,Chennai,2024-01-27,power,"['Pizza', 'North Indian']",5,True
+U000234,Hyderabad,2024-03-02,occasional,"['Momos', 'Pizza']",5,False
+U000235,Bengaluru,2024-10-16,occasional,"['Momos', 'Fast Food']",6,False
+U000236,Chennai,2024-03-10,regular,"['Chinese', 'Biryani']",6,False
+U000237,Delhi,2025-01-13,regular,"['Desserts', 'Pizza']",6,True
+U000238,Delhi,2025-01-05,occasional,"['Biryani', 'South Indian']",6,True
+U000239,Pune,2024-09-25,power,"['Rolls & Wraps', 'Desserts']",0,False
+U000240,Bengaluru,2024-04-24,occasional,"['Chinese', 'Fast Food']",4,False
+U000241,Chennai,2024-11-16,regular,"['Rolls & Wraps', 'Biryani']",1,False
+U000242,Mumbai,2024-02-26,occasional,"['South Indian', 'Biryani']",0,True
+U000243,Pune,2024-03-24,regular,"['Desserts', 'Chinese']",4,True
+U000244,Pune,2024-09-02,power,"['Chinese', 'Biryani']",1,True
+U000245,Hyderabad,2024-05-14,regular,"['Chinese', 'Fast Food']",6,True
+U000246,Mumbai,2024-08-25,occasional,"['South Indian', 'North Indian']",3,True
+U000247,Hyderabad,2024-02-08,power,"['Pizza', 'Rolls & Wraps']",0,False
+U000248,Chennai,2024-04-23,occasional,"['Desserts', 'Pizza']",6,False
+U000249,Hyderabad,2024-05-26,power,"['Fast Food', 'Beverages']",1,True
+U000250,Mumbai,2024-01-07,dormant,"['Fast Food', 'North Indian']",3,False
+U000251,Chennai,2024-04-26,dormant,"['North Indian', 'Fast Food']",0,False
+U000252,Pune,2024-07-20,regular,"['North Indian', 'Beverages']",6,False
+U000253,Delhi,2025-01-24,dormant,"['Biryani', 'Rolls & Wraps']",6,True
+U000254,Delhi,2024-12-08,regular,"['Chinese', 'Pizza']",6,True
+U000255,Hyderabad,2024-03-20,regular,"['Fast Food', 'North Indian']",2,False
+U000256,Hyderabad,2024-09-26,regular,"['Chinese', 'Biryani']",3,False
+U000257,Delhi,2024-09-18,occasional,"['Chinese', 'South Indian']",5,True
+U000258,Delhi,2024-05-17,dormant,"['Desserts', 'North Indian']",1,True
+U000259,Delhi,2024-05-17,occasional,"['South Indian', 'Biryani']",6,False
+U000260,Delhi,2024-10-12,occasional,"['Beverages', 'Desserts']",2,False
+U000261,Delhi,2024-11-08,occasional,"['South Indian', 'Fast Food']",0,False
+U000262,Mumbai,2024-01-16,regular,"['Rolls & Wraps', 'South Indian']",3,True
+U000263,Mumbai,2024-04-19,regular,"['Beverages', 'South Indian']",4,True
+U000264,Mumbai,2024-02-05,regular,"['North Indian', 'Momos']",5,False
+U000265,Mumbai,2024-01-18,dormant,"['Fast Food', 'Pizza']",3,False
+U000266,Pune,2024-12-03,occasional,"['Rolls & Wraps', 'Fast Food']",5,False
+U000267,Delhi,2024-01-28,regular,"['Fast Food', 'Rolls & Wraps']",6,False
+U000268,Mumbai,2024-09-19,power,"['South Indian', 'North Indian']",6,False
+U000269,Pune,2024-05-19,dormant,"['Pizza', 'North Indian']",4,True
+U000270,Delhi,2024-04-16,regular,"['Rolls & Wraps', 'Chinese']",6,True
+U000271,Delhi,2025-01-01,dormant,"['Pizza', 'Chinese']",4,True
+U000272,Delhi,2024-07-20,regular,"['North Indian', 'South Indian']",5,True
+U000273,Delhi,2025-01-21,dormant,"['Biryani', 'Desserts']",6,False
+U000274,Bengaluru,2024-02-26,dormant,"['Rolls & Wraps', 'Momos']",6,False
+U000275,Mumbai,2024-03-07,regular,"['Beverages', 'Rolls & Wraps']",5,False
+U000276,Delhi,2024-08-27,power,"['Rolls & Wraps', 'South Indian']",4,True
+U000277,Bengaluru,2024-05-31,occasional,"['South Indian', 'Chinese']",6,True
+U000278,Bengaluru,2024-08-23,regular,"['Pizza', 'Chinese']",1,True
+U000279,Delhi,2024-11-01,dormant,"['Fast Food', 'Chinese']",4,False
+U000280,Chennai,2024-02-15,power,"['Momos', 'Beverages']",3,True
+U000281,Chennai,2024-10-21,occasional,"['Beverages', 'Chinese']",6,True
+U000282,Hyderabad,2024-01-27,occasional,"['North Indian', 'Momos']",3,False
+U000283,Hyderabad,2024-11-15,power,"['Rolls & Wraps', 'Beverages']",6,True
+U000284,Chennai,2024-05-27,regular,"['Momos', 'Pizza']",0,True
+U000285,Mumbai,2024-09-22,regular,"['South Indian', 'Chinese']",3,False
+U000286,Mumbai,2024-05-18,regular,"['Desserts', 'Momos']",4,False
+U000287,Pune,2024-04-29,dormant,"['Fast Food', 'South Indian']",6,True
+U000288,Chennai,2024-10-06,regular,"['Fast Food', 'Beverages']",1,False
+U000289,Delhi,2024-10-08,regular,"['Desserts', 'North Indian']",5,False
+U000290,Chennai,2024-09-01,occasional,"['Fast Food', 'Pizza']",6,True
+U000291,Chennai,2024-10-10,occasional,"['South Indian', 'Beverages']",5,True
+U000292,Chennai,2024-05-15,regular,"['Pizza', 'Desserts']",1,False
+U000293,Mumbai,2024-02-03,occasional,"['Biryani', 'South Indian']",6,False
+U000294,Mumbai,2024-05-03,occasional,"['Momos', 'Biryani']",5,True
+U000295,Bengaluru,2025-01-17,power,"['Desserts', 'Beverages']",5,False
+U000296,Chennai,2024-06-23,occasional,"['North Indian', 'Chinese']",4,False
+U000297,Hyderabad,2024-09-04,dormant,"['Beverages', 'Rolls & Wraps']",4,True
+U000298,Bengaluru,2024-04-24,regular,"['South Indian', 'Biryani']",4,False
+U000299,Pune,2025-01-16,power,"['Beverages', 'North Indian']",1,True

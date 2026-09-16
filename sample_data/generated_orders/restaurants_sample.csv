@@ -1,0 +1,151 @@
+restaurant_id,name,city,cuisine,avg_prep_time_min,price_tier,rating,is_active
+R00000,North Kitchen 0,Pune,North Indian,34,mid,4.3,True
+R00001,Fast Kitchen 1,Hyderabad,Fast Food,44,mid,4.5,True
+R00002,Rolls Kitchen 2,Delhi,Rolls & Wraps,30,premium,4.2,True
+R00003,Chinese Kitchen 3,Hyderabad,Chinese,28,budget,4.1,True
+R00004,Rolls Kitchen 4,Pune,Rolls & Wraps,23,mid,3.8,True
+R00005,Desserts Kitchen 5,Delhi,Desserts,41,mid,3.5,True
+R00006,Fast Kitchen 6,Bengaluru,Fast Food,31,mid,4.4,True
+R00007,South Kitchen 7,Delhi,South Indian,24,budget,4.0,True
+R00008,Fast Kitchen 8,Bengaluru,Fast Food,35,budget,4.3,True
+R00009,Fast Kitchen 9,Bengaluru,Fast Food,39,mid,3.7,True
+R00010,Fast Kitchen 10,Pune,Fast Food,40,budget,4.3,True
+R00011,Chinese Kitchen 11,Pune,Chinese,20,budget,4.5,True
+R00012,Fast Kitchen 12,Pune,Fast Food,23,budget,4.1,True
+R00013,Pizza Kitchen 13,Mumbai,Pizza,18,mid,4.0,True
+R00014,North Kitchen 14,Pune,North Indian,32,mid,4.1,True
+R00015,Desserts Kitchen 15,Hyderabad,Desserts,15,budget,3.5,True
+R00016,Beverages Kitchen 16,Chennai,Beverages,16,budget,3.7,True
+R00017,Biryani Kitchen 17,Delhi,Biryani,34,mid,4.5,True
+R00018,Fast Kitchen 18,Delhi,Fast Food,27,budget,3.2,True
+R00019,Rolls Kitchen 19,Pune,Rolls & Wraps,36,budget,3.5,True
+R00020,Beverages Kitchen 20,Bengaluru,Beverages,29,budget,3.8,True
+R00021,Desserts Kitchen 21,Pune,Desserts,33,budget,3.3,True
+R00022,Chinese Kitchen 22,Chennai,Chinese,25,mid,3.6,True
+R00023,Beverages Kitchen 23,Mumbai,Beverages,38,mid,3.9,True
+R00024,North Kitchen 24,Bengaluru,North Indian,28,budget,3.5,True
+R00025,Beverages Kitchen 25,Pune,Beverages,32,budget,4.6,True
+R00026,Fast Kitchen 26,Pune,Fast Food,34,mid,4.1,True
+R00027,Fast Kitchen 27,Hyderabad,Fast Food,17,budget,3.3,True
+R00028,South Kitchen 28,Mumbai,South Indian,34,budget,4.1,True
+R00029,South Kitchen 29,Mumbai,South Indian,42,mid,3.8,True
+R00030,Biryani Kitchen 30,Bengaluru,Biryani,19,budget,4.5,True
+R00031,Beverages Kitchen 31,Mumbai,Beverages,29,budget,4.7,True
+R00032,Momos Kitchen 32,Delhi,Momos,39,budget,4.0,True
+R00033,Biryani Kitchen 33,Mumbai,Biryani,15,mid,4.6,True
+R00034,Chinese Kitchen 34,Hyderabad,Chinese,24,mid,3.6,True
+R00035,South Kitchen 35,Pune,South Indian,36,mid,3.4,True
+R00036,Beverages Kitchen 36,Mumbai,Beverages,22,mid,3.8,True
+R00037,North Kitchen 37,Delhi,North Indian,39,budget,4.7,True
+R00038,Desserts Kitchen 38,Hyderabad,Desserts,42,premium,3.5,False
+R00039,Biryani Kitchen 39,Mumbai,Biryani,28,premium,4.6,True
+R00040,Rolls Kitchen 40,Chennai,Rolls & Wraps,21,mid,3.7,True
+R00041,Rolls Kitchen 41,Delhi,Rolls & Wraps,34,budget,3.4,True
+R00042,Chinese Kitchen 42,Mumbai,Chinese,15,budget,3.4,True
+R00043,Beverages Kitchen 43,Chennai,Beverages,19,budget,4.2,True
+R00044,North Kitchen 44,Mumbai,North Indian,23,mid,4.8,True
+R00045,Chinese Kitchen 45,Delhi,Chinese,19,budget,3.6,True
+R00046,North Kitchen 46,Pune,North Indian,44,mid,4.3,True
+R00047,South Kitchen 47,Delhi,South Indian,20,mid,4.3,True
+R00048,Rolls Kitchen 48,Bengaluru,Rolls & Wraps,28,premium,3.8,True
+R00049,South Kitchen 49,Bengaluru,South Indian,29,mid,4.7,True
+R00050,Beverages Kitchen 50,Chennai,Beverages,29,mid,4.2,True
+R00051,North Kitchen 51,Pune,North Indian,19,budget,4.7,True
+R00052,South Kitchen 52,Chennai,South Indian,37,budget,4.5,False
+R00053,Rolls Kitchen 53,Hyderabad,Rolls & Wraps,18,mid,4.5,True
+R00054,Chinese Kitchen 54,Hyderabad,Chinese,37,mid,4.2,True
+R00055,Desserts Kitchen 55,Bengaluru,Desserts,26,budget,4.2,True
+R00056,Biryani Kitchen 56,Delhi,Biryani,30,budget,4.4,True
+R00057,Biryani Kitchen 57,Chennai,Biryani,18,budget,4.2,True
+R00058,South Kitchen 58,Pune,South Indian,24,budget,4.7,True
+R00059,Chinese Kitchen 59,Bengaluru,Chinese,23,budget,3.4,False
+R00060,Pizza Kitchen 60,Bengaluru,Pizza,20,budget,4.1,True
+R00061,South Kitchen 61,Pune,South Indian,26,budget,4.0,True
+R00062,Pizza Kitchen 62,Chennai,Pizza,31,budget,3.6,True
+R00063,North Kitchen 63,Hyderabad,North Indian,32,budget,3.3,True
+R00064,Beverages Kitchen 64,Hyderabad,Beverages,41,mid,3.3,True
+R00065,South Kitchen 65,Pune,South Indian,17,mid,4.6,True
+R00066,Chinese Kitchen 66,Pune,Chinese,32,mid,4.4,True
+R00067,Pizza Kitchen 67,Pune,Pizza,31,mid,4.6,True
+R00068,Pizza Kitchen 68,Delhi,Pizza,35,budget,3.4,True
+R00069,Desserts Kitchen 69,Bengaluru,Desserts,27,budget,3.8,True
+R00070,Pizza Kitchen 70,Mumbai,Pizza,28,mid,3.7,True
+R00071,Chinese Kitchen 71,Pune,Chinese,42,budget,3.7,True
+R00072,Beverages Kitchen 72,Chennai,Beverages,29,mid,4.1,True
+R00073,Desserts Kitchen 73,Bengaluru,Desserts,23,mid,3.5,True
+R00074,Momos Kitchen 74,Chennai,Momos,42,mid,3.4,True
+R00075,South Kitchen 75,Hyderabad,South Indian,17,premium,3.4,True
+R00076,South Kitchen 76,Pune,South Indian,27,mid,4.5,True
+R00077,Momos Kitchen 77,Bengaluru,Momos,22,mid,3.4,True
+R00078,South Kitchen 78,Mumbai,South Indian,18,mid,3.9,True
+R00079,Momos Kitchen 79,Pune,Momos,37,mid,4.0,True
+R00080,South Kitchen 80,Chennai,South Indian,40,budget,3.3,True
+R00081,South Kitchen 81,Pune,South Indian,27,mid,4.3,True
+R00082,Pizza Kitchen 82,Chennai,Pizza,39,budget,3.8,True
+R00083,Pizza Kitchen 83,Mumbai,Pizza,19,budget,4.7,True
+R00084,Pizza Kitchen 84,Delhi,Pizza,18,mid,4.7,True
+R00085,Pizza Kitchen 85,Hyderabad,Pizza,29,budget,4.8,True
+R00086,Rolls Kitchen 86,Chennai,Rolls & Wraps,27,mid,4.2,True
+R00087,South Kitchen 87,Delhi,South Indian,32,mid,3.2,True
+R00088,Pizza Kitchen 88,Pune,Pizza,27,budget,3.9,True
+R00089,Biryani Kitchen 89,Hyderabad,Biryani,42,mid,3.4,True
+R00090,North Kitchen 90,Chennai,North Indian,35,mid,3.4,True
+R00091,Biryani Kitchen 91,Bengaluru,Biryani,34,mid,3.3,True
+R00092,Rolls Kitchen 92,Bengaluru,Rolls & Wraps,22,budget,4.4,True
+R00093,Biryani Kitchen 93,Bengaluru,Biryani,42,mid,3.3,False
+R00094,South Kitchen 94,Bengaluru,South Indian,39,mid,3.6,True
+R00095,Desserts Kitchen 95,Mumbai,Desserts,16,mid,4.7,True
+R00096,Rolls Kitchen 96,Pune,Rolls & Wraps,39,budget,3.5,True
+R00097,Rolls Kitchen 97,Pune,Rolls & Wraps,30,mid,4.2,True
+R00098,Fast Kitchen 98,Bengaluru,Fast Food,39,budget,3.6,True
+R00099,Pizza Kitchen 99,Hyderabad,Pizza,44,mid,3.3,True
+R00100,North Kitchen 100,Bengaluru,North Indian,21,mid,3.5,True
+R00101,Rolls Kitchen 101,Pune,Rolls & Wraps,20,premium,3.9,True
+R00102,Biryani Kitchen 102,Hyderabad,Biryani,41,budget,4.7,True
+R00103,Momos Kitchen 103,Delhi,Momos,32,mid,4.2,True
+R00104,South Kitchen 104,Bengaluru,South Indian,28,budget,4.0,True
+R00105,Momos Kitchen 105,Chennai,Momos,19,budget,3.7,True
+R00106,Pizza Kitchen 106,Hyderabad,Pizza,27,budget,3.9,True
+R00107,Desserts Kitchen 107,Chennai,Desserts,32,budget,3.3,True
+R00108,Fast Kitchen 108,Delhi,Fast Food,19,mid,4.1,True
+R00109,Biryani Kitchen 109,Hyderabad,Biryani,34,mid,3.7,True
+R00110,Chinese Kitchen 110,Hyderabad,Chinese,20,mid,3.8,True
+R00111,Fast Kitchen 111,Pune,Fast Food,37,mid,4.7,True
+R00112,Pizza Kitchen 112,Hyderabad,Pizza,23,budget,4.5,True
+R00113,Pizza Kitchen 113,Bengaluru,Pizza,18,budget,4.5,False
+R00114,North Kitchen 114,Mumbai,North Indian,31,budget,3.7,True
+R00115,Chinese Kitchen 115,Chennai,Chinese,15,mid,4.6,True
+R00116,Pizza Kitchen 116,Bengaluru,Pizza,22,budget,3.8,True
+R00117,Desserts Kitchen 117,Bengaluru,Desserts,44,mid,3.7,True
+R00118,South Kitchen 118,Pune,South Indian,37,mid,3.2,True
+R00119,Chinese Kitchen 119,Pune,Chinese,30,budget,3.5,True
+R00120,Beverages Kitchen 120,Chennai,Beverages,43,mid,4.8,True
+R00121,Momos Kitchen 121,Hyderabad,Momos,28,budget,3.3,True
+R00122,North Kitchen 122,Delhi,North Indian,29,budget,3.5,True
+R00123,Fast Kitchen 123,Chennai,Fast Food,16,budget,3.7,True
+R00124,Beverages Kitchen 124,Hyderabad,Beverages,36,budget,3.6,True
+R00125,Fast Kitchen 125,Chennai,Fast Food,34,mid,4.3,True
+R00126,Desserts Kitchen 126,Bengaluru,Desserts,36,mid,3.7,True
+R00127,Chinese Kitchen 127,Mumbai,Chinese,29,mid,4.6,True
+R00128,Fast Kitchen 128,Chennai,Fast Food,24,mid,3.7,True
+R00129,Momos Kitchen 129,Chennai,Momos,30,budget,3.8,True
+R00130,Desserts Kitchen 130,Hyderabad,Desserts,26,budget,3.5,False
+R00131,South Kitchen 131,Hyderabad,South Indian,42,budget,3.7,True
+R00132,Momos Kitchen 132,Bengaluru,Momos,27,mid,4.2,True
+R00133,Biryani Kitchen 133,Pune,Biryani,33,budget,4.4,True
+R00134,Momos Kitchen 134,Pune,Momos,23,mid,4.6,True
+R00135,Beverages Kitchen 135,Hyderabad,Beverages,36,budget,4.1,True
+R00136,Fast Kitchen 136,Chennai,Fast Food,18,budget,4.4,True
+R00137,Beverages Kitchen 137,Hyderabad,Beverages,25,budget,3.3,True
+R00138,Beverages Kitchen 138,Delhi,Beverages,41,budget,4.8,True
+R00139,Beverages Kitchen 139,Bengaluru,Beverages,38,budget,4.1,True
+R00140,Biryani Kitchen 140,Chennai,Biryani,28,budget,3.8,False
+R00141,Rolls Kitchen 141,Delhi,Rolls & Wraps,18,mid,4.3,True
+R00142,North Kitchen 142,Chennai,North Indian,37,mid,3.3,True
+R00143,Pizza Kitchen 143,Bengaluru,Pizza,33,mid,3.2,True
+R00144,Biryani Kitchen 144,Pune,Biryani,30,budget,4.6,True
+R00145,North Kitchen 145,Mumbai,North Indian,22,mid,3.8,True
+R00146,Beverages Kitchen 146,Mumbai,Beverages,36,budget,3.6,True
+R00147,Momos Kitchen 147,Chennai,Momos,20,budget,3.7,True
+R00148,Fast Kitchen 148,Pune,Fast Food,31,budget,3.9,True
+R00149,Beverages Kitchen 149,Bengaluru,Beverages,32,premium,4.3,True
