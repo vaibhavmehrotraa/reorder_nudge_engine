@@ -1,9 +1,8 @@
 # Reorder Nudge Engine — a Swiggy-style product + analytics case study
 
-A self-contained personal project that walks a reorder-nudge feature end to end: PRD → synthetic data →
+A self-contained project that walks a reorder-nudge feature end to end: PRD → synthetic data →
 rule-based trigger engine with event logging → a holdout-controlled incrementality experiment → an
-analysis dashboard. Built to practice product development and product analytics strategy together, on a
-feature modeled after how Swiggy's real order-frequency mechanics work (no real Swiggy data was used).
+analysis dashboard. On a feature modeled after how Swiggy's real order-frequency mechanics work (no real Swiggy data was used).
 
 **[Live dashboard](./dashboard/index.html)** — open `dashboard/index.html` directly, or enable GitHub
 Pages on this repo (Settings → Pages → deploy from `/dashboard`) for a shareable URL.
